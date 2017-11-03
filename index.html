@@ -6,48 +6,48 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <header>
-      <div>
-        <img src="img/logo.svg" alt="Магазин Девайс">
-        <button>Поиск</button>
-        <input type="text" placeholder="Поиск по сайту">
-        <button>Войти</button>
-        <button>Сравнить</button>
-        <button>Корзина</button>
+    <header class="main-header">
+      <div class="main-header-container">
+        <img class="main-header-logo-img" src="img/logo.svg" alt="Магазин Девайс">
+        <button class="main-header-search-button">Поиск</button>
+        <!-- Придумать название класса, для поля ввода текста к поиску --><input class="main-header-search-???" type="text" placeholder="Поиск по сайту">
+        <button class="main-header-button login">Войти</button>
+        <button class="main-header-button compare">Сравнить</button>
+        <button class="main-header-button cart">Корзина</button>
       </div>
-      <nav>
-        <div>
-          <span>Каталог товаров</span>
-          <ul>
-            <li>
-              <a>Виртуальная реальность</a>
+      <nav class="main-navigation">
+        <div class="catalog">
+          <!-- Выбрать более подходящий элемент. Должно происходить открытие каталога --><span>Каталог товаров</span>
+          <ul class="catalog-items">
+            <li class="catalog-item">
+              <a class="catalog-link" href="#">Виртуальная реальность</a>
             </li>
-            <li>
-              <a>Моноподы для селфи</a>
+            <li  class="catalog-item">
+              <a  class="catalog-link" href="#">Моноподы для селфи</a>
             </li>
-            <li>
-              <a>Экшн-камеры</a>
+            <li  class="catalog-item">
+              <a  class="catalog-link" href="#">Экшн-камеры</a>
             </li>
-            <li>
-              <a>Фитнес-браслеты</a>
+            <li  class="catalog-item">
+              <a  class="catalog-link" href="#">Фитнес-браслеты</a>
             </li>
-            <li>
-              <a>Умные часы</a>
+            <li  class="catalog-item">
+              <a  class="catalog-link" href="#">Умные часы</a>
             </li>
-            <li>
-              <a>Квадрокоптеры</a>
+            <li  class="catalog-item">
+              <a  class="catalog-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </div>
-        <ul>
-          <li>
-            <a>Доставка</a>
+        <ul class="main-navigation-items">
+          <li class="main-navigaation-item">
+            <a class="main-navigation-link" href="#">Доставка</a>
           </li>
-          <li>
-            <a>Гарантия</a>
+          <li class="main-navigaation-item">
+            <a class="main-navigation-link" href="#">Гарантия</a>
           </li>
-          <li>
-            <a>Контакты</a>
+          <li class="main-navigaation-item">
+            <a class="main-navigation-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
