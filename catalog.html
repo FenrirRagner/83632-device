@@ -56,14 +56,115 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="main">
+    <div class="container">
+      <h1 class="visually-hidden">Каталог товаров</h1>
+      <nav class="breadcrumbs">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="filter">
+        <p class="filter-title">Фильтр:</p>
+        <form class="filter-form">
+          <span class="filter-feature">Цвет</span>
+          <input class="filter-input" id="black" type="checkbox" checked>
+          <label class="filter-label" for="black">Черный</label>
 
+          <input class="filter-input" id="white" type="checkbox">
+          <label class="filter-label" for="white">Белый</label>
+
+          <input class="filter-input" id="blue" type="checkbox" checked>
+          <label class="filter-label" for="blue">Синий</label>
+
+          <input class="filter-input" id="red" type="checkbox" checked>
+          <label class="filter-label" for="red">Красный</label>
+
+          <input class="filter-input" id="pink" type="checkbox">
+          <label class="filter-label" for="pink">Розовый</label>
+
+          <span class="filter-feature">Bluetooth</span>
+          <input class="filter-input" name="bt" id="bt-yes" type="radio" checked>
+          <label class="filter-label" for="bt-yes">Есть</label>
+
+          <input class="filter-input" name="bt" id="bt-no" type="radio">
+          <label class="filter-label" for="bt-no">Нет</label>
+          <button class="filter-button button">Показать</button>
+        </form>
+      </section>
+      <section class="ranking">
+        <p class="ranking-title">Сортировка:</p>
+        <ul class="ranking-lint">
+          <li class="ranking-item">
+            <a class="ranking-link">По цене</a>
+          </li>
+          <li class="ranking-item">
+            <a class="ranking-link">По типу</a>
+          </li>
+          <li class="ranking-item">
+            <a class="ranking-link">По популярности</a>
+          </li>
+          <li class="ranking-item">
+            <a class="ranking-link">Up</a>
+          </li>
+          <li class="ranking-item">
+            <a class="ranking-link">Down</a>
+          </li>
+        </ul>
+        <div class="products-cards">
+          <div class="product">
+            <a class="product-link" href="#">
+              <img class="product-photo" src="http://placehold.it/360x380" alt="Товар">
+              <p class="product-text">
+                <span class="product-name">Любительская селфи-палка</span>
+                <b class="product-cost">500 руб.</b>
+              </p>
+            </a>
+          </div>
+          <div class="product">
+            <a class="product-link" href="#">
+              <img class="product-photo" src="http://placehold.it/360x380" alt="Товар">
+              <p class="product-text">
+                <span class="product-name">Профессиональная селфи-палка</span>
+                <b class="product-cost">1500 руб.</b>
+              </p>
+            </a>
+          </div>
+          <div class="product">
+            <a class="product-link" href="#">
+              <img class="product-photo" src="http://placehold.it/360x380" alt="Товар">
+              <p class="product-text">
+                <span class="product-name">Непотопляемая селфи-палка</span>
+                <b class="product-cost">2500 руб.</b>
+              </p>
+            </a>
+          </div>
+          <div class="product">
+            <a class="product-link" href="#">
+              <img class="product-photo" src="http://placehold.it/360x380" alt="Товар">
+              <p class="product-text">
+                <span class="product-name">Селфи-палка &#171;Следуй за мной&#187;</span>
+                <b class="product-cost">4900 руб.</b>
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="container">
       <img class="logo-img-yellow" src="http://placehold.it/164x36" alt="Магазин Девайс">
       <span class="footer-adress">г. Москва, ул. Строителей, 15</span>
-      <span calss="footer-phone">Тел.: +7 (495) 495-95-95</span>
+      <span class="footer-phone">Тел.: +7 (495) 495-95-95</span>
       <button class="button button-login">Войти</button>
       <button class="button button-compare">Сравнить</button>
       <button class="button button-cart">Корзина</button>
@@ -81,7 +182,7 @@
         </ul>
       </nav>
       <section class="social">
-        <h2 class="social-title"></h2>
+        <h2 class="social-title">Мы в соц. сетях</h2>
         <ul class="social-items">
           <li class="social-item">
             <a class="social-link-fb">facebook</a>
