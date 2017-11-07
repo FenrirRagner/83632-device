@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
- <head>
+
+<head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
   <title>HTML Academy: Девайс-каталог</title>
- </head>
+</head>
 
- <body>
+<body>
   <header class="header">
     <div class="container">
       <div class="header-logo">
-        <a class="header-logo-link" href="index.html"><img class="header-logo-image" src="http://placehold.it/164x36" alt="Магазин Девайс"></a>
+        <a class="header-logo-link" href="index.html"><img class="header-logo-image" src="img/logo.png" alt="Магазин Девайс"></a>
       </div>
       <button class="header-search">Поиск</button>
       <input class="header-search-input" type="text" placeholder="Поиск по сайту">
@@ -109,58 +110,74 @@
         <p class="ranking-title">Сортировка:</p>
         <ul class="ranking-lint">
           <li class="ranking-item">
-            <a class="ranking-link">По цене</a>
+            <a class="ranking-link" href="#">По цене</a>
           </li>
           <li class="ranking-item">
-            <a class="ranking-link">По типу</a>
+            <a class="ranking-link" href="#">По типу</a>
           </li>
           <li class="ranking-item">
-            <a class="ranking-link">По популярности</a>
+            <a class="ranking-link" href="#">По популярности</a>
           </li>
           <li class="ranking-item">
-            <a class="ranking-link">Up</a>
+            <a class="ranking-link" href="#">Up</a>
           </li>
           <li class="ranking-item">
-            <a class="ranking-link">Down</a>
+            <a class="ranking-link" href="#">Down</a>
           </li>
         </ul>
         <div class="products-cards">
-            <a class="product-link" href="#">
-              <div class="product-photo-container">
-                <img class="product-photo-image" src="http://placehold.it/360x380" alt="Товар">
-              </div>
-              <p class="product-text">
-                <span class="product-name">Любительская селфи-палка</span>
-                <strong class="product-cost">500 руб.</strong>
-              </p>
-            </a>
-            <a class="product-link" href="#">
-              <div class="product-photo-container">
-                <img class="product-photo-image" src="http://placehold.it/360x380" alt="Товар">
-              </div>
-              <p class="product-text">
-                <span class="product-name">Профессиональная селфи-палка</span>
-                <strong class="product-cost">1500 руб.</strong>
-              </p>
-            </a>
-            <a class="product-link" href="#">
-              <div class="product-photo-container">
-                <img class="product-photo-image" src="http://placehold.it/360x380" alt="Товар">
-              </div>
-              <p class="product-text">
-                <span class="product-name">Непотопляемая селфи-палка</span>
-                <strong class="product-cost">2500 руб.</strong>
-              </p>
-            </a>
-            <a class="product-link" href="#">
-              <div class="product-photo-container">
-                <img class="product-photo-image" src="http://placehold.it/360x380" alt="Товар">
-              </div>
-              <p class="product-text">
-                <span class="product-name">Селфи-палка &#171;Следуй за мной&#187;</span>
-                <strong class="product-cost">4900 руб.</strong>
-              </p>
-            </a>
+          <a class="product-link" href="#">
+            <div class="product-photo-container">
+              <img class="product-photo-image" src="http://placehold.it/360x380" alt="Товар">
+            </div>
+            <p class="product-text">
+              <span class="product-name">Любительская селфи-палка</span>
+              <strong class="product-cost">500 руб.</strong>
+            </p>
+          </a>
+          <div class="product-to-container">
+            <button class="product-to-cart button">В корзину</button>
+            <button class="product-to-range button">Добавить к сравнению</button>
+          </div>
+          <a class="product-link" href="#">
+            <div class="product-photo-container">
+              <img class="product-photo-image" src="http://placehold.it/360x380" alt="Товар">
+            </div>
+            <p class="product-text">
+              <span class="product-name">Профессиональная селфи-палка</span>
+              <strong class="product-cost">1500 руб.</strong>
+            </p>
+          </a>
+          <div class="product-to-container">
+            <button class="product-to-cart button">В корзину</button>
+            <button class="product-to-range button">Добавить к сравнению</button>
+          </div>
+          <a class="product-link" href="#">
+            <div class="product-photo-container">
+              <img class="product-photo-image" src="http://placehold.it/360x380" alt="Товар">
+            </div>
+            <p class="product-text">
+              <span class="product-name">Непотопляемая селфи-палка</span>
+              <strong class="product-cost">2500 руб.</strong>
+            </p>
+          </a>
+          <div class="product-to-container">
+            <button class="product-to-cart button">В корзину</button>
+            <button class="product-to-range button">Добавить к сравнению</button>
+          </div>
+          <a class="product-link" href="#">
+            <div class="product-photo-container">
+              <img class="product-photo-image" src="http://placehold.it/360x380" alt="Товар">
+            </div>
+            <p class="product-text">
+              <span class="product-name">Селфи-палка &#171;Следуй за мной&#187;</span>
+              <strong class="product-cost">4900 руб.</strong>
+            </p>
+          </a>
+          <div class="product-to-container">
+            <button class="product-to-cart button">В корзину</button>
+            <button class="product-to-range button">Добавить к сравнению</button>
+          </div>
         </div>
         <nav class="paginator">
           <a class="paginator-prev" href="#">Назад</a>
@@ -168,8 +185,8 @@
             <li class="paginator-page-one">
               <a href="#">1</a>
             </li>
-              <li class="paginator-page-two">
-                <a href="#">2</a>
+            <li class="paginator-page-two">
+              <a href="#">2</a>
             </li>
             <li class="paginator-page-three">
               <a href="#">3</a>
@@ -218,5 +235,6 @@
       </section>
     </div>
   </footer>
- </body>
+</body>
+
 </html>
