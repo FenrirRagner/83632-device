@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
  <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
@@ -11,22 +10,23 @@
   <header class="header">
     <div class="container">
       <div class="header-logo">
-        <img class="header-logo-image" src="http://placehold.it/164x36" alt="Магазин Девайс">
+        <a class="header-logo-link" href="index.html"><img class="header-logo-image" src="http://placehold.it/164x36" alt="Магазин Девайс"></a>
       </div>
       <button class="header-search">Поиск</button>
       <input class="header-search-input" type="text" placeholder="Поиск по сайту">
-      <button class="button button-login">Войти</button>
+      <a class="user-profile" href="#">Валентин Петухов</a>
+      <button class="button button-logout">Выйти</button>
       <button class="button button-compare">Сравнить</button>
       <button class="button button-cart">Корзина</button>
     </div>
     <nav class="navigation">
       <div class="catalog">
-        <!-- Выбрать более подходящий элемент. Должно происходить открытие каталога --><span>Каталог товаров</span>
+        <button class="catalog-button button">Каталог товаров</button>
         <ul class="catalog-list">
           <li class="catalog-item">
             <a class="catalog-item-link" href="#">Виртуальная реальность</a>
           </li>
-          <li class="catalog--item">
+          <li class="catalog-item">
             <a class="catalog-item-link" href="#">Моноподы для селфи</a>
           </li>
           <li class="catalog-item">
@@ -76,6 +76,9 @@
         <h2 class="visually-hidden">Фильтр товаров по характеристикам</h2>
         <p class="filter-title">Фильтр:</p>
         <form class="filter-form">
+          <span>Стоимость</span>
+          <input id="cost" type="range" min="0" max="10000" step="1000">
+
           <span class="filter-feature">Цвет</span>
           <input class="filter-input" id="black" type="checkbox" checked>
           <label class="filter-label" for="black">Черный</label>
@@ -122,42 +125,42 @@
           </li>
         </ul>
         <div class="products-cards">
-          <div class="product">
             <a class="product-link" href="#">
-              <img class="product-photo" src="http://placehold.it/360x380" alt="Товар">
+              <div class="product-photo-container">
+                <img class="product-photo-image" src="http://placehold.it/360x380" alt="Товар">
+              </div>
               <p class="product-text">
                 <span class="product-name">Любительская селфи-палка</span>
-                <b class="product-cost">500 руб.</b>
+                <strong class="product-cost">500 руб.</strong>
               </p>
             </a>
-          </div>
-          <div class="product">
             <a class="product-link" href="#">
-              <img class="product-photo" src="http://placehold.it/360x380" alt="Товар">
+              <div class="product-photo-container">
+                <img class="product-photo-image" src="http://placehold.it/360x380" alt="Товар">
+              </div>
               <p class="product-text">
                 <span class="product-name">Профессиональная селфи-палка</span>
-                <b class="product-cost">1500 руб.</b>
+                <strong class="product-cost">1500 руб.</strong>
               </p>
             </a>
-          </div>
-          <div class="product">
             <a class="product-link" href="#">
-              <img class="product-photo" src="http://placehold.it/360x380" alt="Товар">
+              <div class="product-photo-container">
+                <img class="product-photo-image" src="http://placehold.it/360x380" alt="Товар">
+              </div>
               <p class="product-text">
                 <span class="product-name">Непотопляемая селфи-палка</span>
-                <b class="product-cost">2500 руб.</b>
+                <strong class="product-cost">2500 руб.</strong>
               </p>
             </a>
-          </div>
-          <div class="product">
             <a class="product-link" href="#">
-              <img class="product-photo" src="http://placehold.it/360x380" alt="Товар">
+              <div class="product-photo-container">
+                <img class="product-photo-image" src="http://placehold.it/360x380" alt="Товар">
+              </div>
               <p class="product-text">
                 <span class="product-name">Селфи-палка &#171;Следуй за мной&#187;</span>
-                <b class="product-cost">4900 руб.</b>
+                <strong class="product-cost">4900 руб.</strong>
               </p>
             </a>
-          </div>
         </div>
         <nav class="paginator">
           <a class="paginator-prev" href="#">Назад</a>
@@ -187,7 +190,7 @@
       <button class="button button-cart">Корзина</button>
       <nav>
         <ul class="navigation-items">
-          <li class="main-navigaation-item">
+          <li class="main-navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
           </li>
           <li class="main-navigaation-item">
@@ -199,7 +202,7 @@
         </ul>
       </nav>
       <section class="social">
-        <h2 class="social-title">Мы в соц. сетях</h2>
+        <h2 class="visibility-hidden social-title">Мы в соц. сетях</h2>
         <ul class="social-items">
           <li class="social-item">
             <a class="social-link-fb">facebook</a>
