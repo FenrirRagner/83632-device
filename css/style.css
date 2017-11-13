@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'open_sanslight', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  opacity: .6;
+}
+
+a:focus {
+  opacity: .3;
+}
+
+ul {
+  list-style: none;
+}
+
+.navigation-list {
+  font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  color: #000000;
+}
+
+.catalog-list {
+  line-height: 36px;
+  letter-spacing: .15px;
+}
+
+@font-face {
+  font-family: 'open_sanslight';
+  font-weight: normal;
+  src: url('../fonts/open_sans_light.woff2') format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('../fonts/gilroy.woff2') format('woff2');
+}
