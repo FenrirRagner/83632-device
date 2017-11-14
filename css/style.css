@@ -26,6 +26,63 @@ ul {
   list-style: none;
 }
 
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+.header {
+  background-color: rgba(240, 197, 46, .5);
+}
+
+.header-search-input {
+  background-color: rgba(240, 197, 46, .0);
+  border: none;
+  font-family: 'open_sanslight', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.header-search-input:focus {
+  outline: none;
+  border-bottom: 1px solid #000000;
+}
+
+.header-search-input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, .3);
+}
+
+.header-search-input:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, .6);
+}
+
+.header-search-input:focus::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 1);
+
+}
+
+.header-search-button {
+  visibility: hidden;
+  border: 2px solid #000000;
+  background-color: rgba(0, 0, 0, 0);
+  color: #000000;
+  font-family: 'open_sanslight', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.header-search-input:focus+.header-search-button {
+  visibility: visible;
+}
+
 .navigation-list {
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
@@ -40,14 +97,160 @@ ul {
   letter-spacing: .15px;
 }
 
+
+.slide-tagline {
+  font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+  font-size: 47px;
+  font-weight: 400;
+  letter-spacing: .17px;
+}
+
+.slide-description {
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+}
+
+.slide-ttx-value {
+  font-family: 'Gilroy-Light', 'Arial', sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: .36px;
+}
+
+.slide-ttx-property {
+  color: #464646;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: .13px;
+}
+
+.slide-link {
+  color: #000000;
+  font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+  padding-left: 44px;
+  padding-right: 44px;
+  background-image: url(../img/addion.png);
+  background-repeat: no-repeat;
+  background-position: 0 7px;
+}
+
+.slide-link:hover {
+  background-color: #f0c52e;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  opacity: 1;
+}
+
+.slide-link:focus {
+  background-color: #f0c52e;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  opacity: .3;
+}
+
+.product-categories-name {
+  color: #000000;
+  font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+}
+
+.services-content-title {
+  color: #000000;
+  font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+  font-size: 47px;
+  font-weight: 400;
+  letter-spacing: 0.21px;
+}
+
+.services-content-text {
+  color: #464646;
+  font-family: 'open_sanslight', Arial, sans-serif;
+  letter-spacing: 0.15px;
+}
+
+.about-title,
+.contacts-title {
+  color: #000000;
+  font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+  font-size: 47px;
+  font-weight: 400;
+  letter-spacing: 0.21px;
+}
+
+.about-content,
+.contacts-content {
+  color: #464646;
+  font-family: 'open_sanslight', Arial, sans-serif;
+}
+
+.about-item {
+  font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.product-categories {
+  display: flex;
+  min-width: 1160px;
+}
+
+.product-categories-card-link {
+  width: 160px;
+  height: 235px;
+  margin-right: 40px;
+}
+
+.card-image-wrapper {
+  width: 160px;
+  height: 160px;
+  background-color: rgba(240, 197, 46, .5);
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.product-categories-card-link:nth-child(3) .card-image-wrapper {
+  vertical-align: bottom;
+}
+
+.product-categories-card-link:hover {
+  opacity: 1;
+}
+
+.product-categories-card-link:hover .card-image-wrapper{
+  background-color: rgba(240, 197, 46, 1);
+}
+
 @font-face {
   font-family: 'open_sanslight';
   font-weight: normal;
-  src: url('../fonts/open_sans_light.woff2') format('woff2');
+  src: url('../fonts/web/opensanslight.woff2') format('woff2');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy-ExtraBold';
-  src: url('../fonts/gilroy.woff2') format('woff2');
+  src: url('../fonts/web/gilroyextrabold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('../fonts/web/gilroylight.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'opensans'
+  src: url('../fonts/web/opensans.woff2') format('woff2');
 }
