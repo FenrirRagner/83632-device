@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'open_sanslight', Arial, sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -44,7 +44,7 @@ ul {
 .header-search-input {
   background-color: rgba(240, 197, 46, .0);
   border: none;
-  font-family: 'open_sanslight', Arial, sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -73,7 +73,7 @@ ul {
   border: 2px solid #000000;
   background-color: rgba(0, 0, 0, 0);
   color: #000000;
-  font-family: 'open_sanslight', Arial, sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
@@ -107,7 +107,6 @@ ul {
 
 .slide-description {
   color: #464646;
-  font-family: "Open Sans";
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -129,31 +128,66 @@ ul {
   letter-spacing: .13px;
 }
 
-.slide-link {
+.slide-link,
+.services-label,
+.about-link,
+.contacts-link,
+.write-us-submit {
   color: #000000;
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2.15px;
-  padding-left: 44px;
-  padding-right: 44px;
-  background-image: url(../img/addion.png);
-  background-repeat: no-repeat;
-  background-position: 0 7px;
+  display: block;
+  width: 220px;
+  background-image: url(../img/addion-1.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  text-align: center;
 }
 
-.slide-link:hover {
+.services-label {
+  width: 160px;
+}
+
+.about-link,
+.contacts-link {
+  width: 260px;
+}
+
+.slide-link:hover,
+.services-label:hover,
+.about-link:hover,
+.contacts-link:hover,
+.write-us-submit:hover {
+background-repeat: repeat;
+  opacity: 1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.services-label:active {
+  background-image: none;
+  background-color: rgb(0, 0, 0);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 118px;
+  color: rgb(247, 225, 132);
+}
+
+.slide-link:active,
+.about-link:active,
+.contacts-link:active,
+.write-us-submit:active {
   background-color: #f0c52e;
   padding-top: 14px;
   padding-bottom: 11px;
   opacity: 1;
 }
 
-.slide-link:focus {
-  background-color: #f0c52e;
-  padding-top: 14px;
-  padding-bottom: 11px;
+
+.product-categories-card-link:active .product-categories-card-image{
   opacity: .3;
 }
 
@@ -175,7 +209,7 @@ ul {
 
 .services-content-text {
   color: #464646;
-  font-family: 'open_sanslight', Arial, sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
   letter-spacing: 0.15px;
 }
 
@@ -191,7 +225,7 @@ ul {
 .about-content,
 .contacts-content {
   color: #464646;
-  font-family: 'open_sanslight', Arial, sans-serif;
+  font-family: 'open_sanslight', 'Arial', sans-serif;
 }
 
 .about-item {
@@ -233,6 +267,76 @@ ul {
   background-color: rgba(240, 197, 46, 1);
 }
 
+.footer {
+  background-color: #464646;
+}
+
+.button {
+  color: #ffffff;
+font-family: 'open_sanslight', 'Arial', sans-serif;
+line-height: 36px;
+letter-spacing: 0.15px;
+background-color: rgba(255, 0, 0, 0);
+border: none;
+}
+
+.footer-adress,
+.footer-phone {
+  color: #ffffff;
+}
+
+.navigation-link {
+  color: #ffffff;
+font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+font-size: 18px;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 3.6px;
+}
+
+/*Modal window. Write us.*/
+
+.write-us-name,
+.write-us-email,
+.write-us-text {
+  color: #000000;
+font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 18px;
+}
+
+.write-us-input,
+.write-us-text-input {
+  border: none;
+  background-color: #f8f8f8;
+  opacity: .5;
+}
+
+.write-us-input:hover,
+.write-us-text-input:hover{
+  opacity: .8;
+  outline: none;
+}
+
+.write-us-input:focus,
+.write-us-text-input:focus{
+  opacity: 1;
+  background-color: #ffffff;
+  outline: none;
+  border: 3px solid rgb(240, 197, 46);
+}
+
+.write-us-input:invalid{
+  background-color: rgb(237, 181, 181);
+}
+
+.write-us-submit {
+  background-color: rgba(240, 197, 46, 0);
+  border: none;
+}
+
+/*Fonts*/
 @font-face {
   font-family: 'open_sanslight';
   font-weight: normal;
