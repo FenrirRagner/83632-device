@@ -65,6 +65,7 @@
   <main class="main">
     <div class="container">
       <h1 class="visually-hidden">Каталог товаров</h1>
+      <h2 class="main-catalog-title">Моноподы для селфи</h2>
       <nav class="breadcrumbs">
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
@@ -82,8 +83,13 @@
         <h2 class="visually-hidden">Фильтр товаров по характеристикам</h2>
         <p class="filter-title">Фильтр:</p>
         <form class="filter-form" action="https://echo.htmlacademy.ru">
-          <label class="filter-cost" for="cost">Стоимость</label>
-          <input class="filter-cost-range" id="cost" name="cost-product" type="range" min="0" max="10000" step="1000">
+          <fieldset class="filter-range">
+            <legend class="filter-cost">
+              Стоимость
+            </legend>
+            <input class="filter-cost-range" id="cost" name="cost-product" type="range" min="0" max="10000" step="1000">
+          </fieldset>
+
           <fieldset class="filter-colors">
             <legend class="filter-feature">Цвет</legend>
             <ul class="filter-colors-list">
@@ -123,7 +129,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="filter-button button" type="submit">Показать</button>
+          <button class="filter-button button detail-button" type="submit">Показать</button>
         </form>
       </section>
       <section class="ranking">
@@ -131,7 +137,7 @@
         <p class="ranking-title">Сортировка:</p>
         <ul class="ranking-lint">
           <li class="ranking-item">
-            <a class="ranking-link" href="#">По цене</a>
+            <a class="ranking-link use-type" href="#">По цене</a>
           </li>
           <li class="ranking-item">
             <a class="ranking-link" href="#">По типу</a>
@@ -158,8 +164,8 @@
           </div>
 
           <div class="product-to-container">
-            <button class="product-to-cart button">В корзину</button>
-            <button class="product-to-range button">Добавить к сравнению</button>
+            <button type="button" class="product-to-cart button detail-button">В корзину</button>
+            <button type="button" class="product-to-range button">Добавить к сравнению</button>
           </div>
 
           <div class="product-card">
@@ -173,7 +179,7 @@
           </div>
 
           <div class="product-to-container">
-            <button class="product-to-cart button">В корзину</button>
+            <button class="product-to-cart button detail-button">В корзину</button>
             <button class="product-to-range button">Добавить к сравнению</button>
           </div>
 
@@ -188,7 +194,7 @@
           </div>
 
           <div class="product-to-container">
-            <button class="product-to-cart button">В корзину</button>
+            <button class="product-to-cart button detail-button">В корзину</button>
             <button class="product-to-range button">Добавить к сравнению</button>
           </div>
 
@@ -203,7 +209,7 @@
           </div>
 
           <div class="product-to-container">
-            <button class="product-to-cart button">В корзину</button>
+            <button class="product-to-cart button detail-button">В корзину</button>
             <button class="product-to-range button">Добавить к сравнению</button>
           </div>
         </div>
