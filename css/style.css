@@ -197,6 +197,12 @@ ul {
   letter-spacing: 3.6px;
 }
 
+.catalog-button::after {
+  content: url(../img/plus.svg);
+  width: 16px;
+  height: 16px;
+  opacity: .3;
+}
 
 /*.catalog-button:hover+.catalog-list {
   display: block;
@@ -483,6 +489,22 @@ font-weight: 300;
 letter-spacing: 0.16px;
 }
 
+.product-card {
+  position: relative;
+}
+
+.product-to-container {
+  width: 360px;
+  height: 380px;
+  background-color: rgba(238, 238, 238, .7);
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+
+.product-card:hover .product-to-container {
+  visibility: visible;
+}
 
 .paginator {
 font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
