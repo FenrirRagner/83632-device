@@ -1,7 +1,8 @@
 /*Fonts*/
 
 @font-face {
-  font-family: 'open sans' src: url('../fonts/web/opensans.woff2') format('woff2');
+  font-family: 'open sans'; 
+  src: url('../fonts/web/opensans.woff2') format('woff2');
 }
 
 @font-face {
