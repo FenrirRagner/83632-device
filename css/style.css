@@ -1,7 +1,7 @@
 /*Fonts*/
 
 @font-face {
-  font-family: 'open sans'; 
+  font-family: 'open sans';
   src: url('../fonts/web/opensans.woff2') format('woff2');
 }
 
@@ -34,13 +34,14 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: 'open sans light', 'Arial', sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
   color: #000000;
+  width: 1200px;
 }
 
 a {
@@ -75,7 +76,7 @@ ul {
 /*Common elements*/
 
 .button {
-  font-family: 'open sans light', 'Arial', sans-serif;
+  font-family: 'open sans', 'Arial', sans-serif;
   line-height: 36px;
   letter-spacing: 0.15px;
   background-color: rgba(255, 0, 0, 0);
@@ -113,6 +114,46 @@ ul {
 
 .header {
   background-color: rgba(240, 197, 46, .5);
+  min-width: 1160px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  margin-top: 40px;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.header-logo {
+  margin-left: 60px;
+  margin-top: -18px;
+  margin-bottom: 10px;
+}
+
+
+.header-search-form {
+  width: 440px;
+  margin-left: 60px;
+}
+
+.button-login {
+  width: 80px;
+  margin-left: auto;
+  margin-right: 200px;
+}
+
+.button-compare,
+.button-cart {
+  width: 100px;
+}
+
+.button-cart{
+  margin-left: 20px;
+  margin-right: 60px;
 }
 
 .header .button:hover {
@@ -181,6 +222,8 @@ ul {
 
 .catalog {
   background-color: rgb(247, 226, 150);
+  margin-left: 60px;
+  width: 250px;
 }
 
 .catalog-list {
@@ -196,6 +239,9 @@ ul {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3.6px;
+  line-height: 12px;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-button::after {
@@ -203,19 +249,41 @@ ul {
   width: 16px;
   height: 16px;
   opacity: .3;
+  margin-left: 10px;
 }
 
-/*.catalog-button:hover+.catalog-list {
-  display: block;
+
+/*.catalog-button:focus+.catalog-list {
+  display: inline-block;
 }*/
 
+.navigation {
+  display: flex;
+}
+
 .navigation-list {
+  display: flex;
+  justify-content: space-between;
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3.6px;
   color: #000000;
+  margin: 0;
+  margin-right: 60px;
+  margin-left: auto;
+  padding: 0;
+  width: 500px;
+}
+
+.navigation-item {
+  width: 140px;
+}
+
+.navigation-item:nth-child(2) {
+  margin-left: 35px;
+  margin-right: 108px;
 }
 
 
@@ -409,35 +477,41 @@ ul {
 
 
 /*Style for cotalog element*/
+
 .main-catalog-title {
-color: #000000;
+  color: #000000;
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
-font-size: 47px;
-font-weight: 400;
-letter-spacing: 0.17px;
+  font-size: 47px;
+  font-weight: 400;
+  letter-spacing: 0.17px;
 }
 
 .breadcrumbs-link {
-color: rgba(0, 0, 0, .3);
-font-size: 14px;
-font-weight: 300;
-line-height: 36px;
-letter-spacing: 0.14px;
+  color: rgba(0, 0, 0, .3);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.14px;
+            </div>
+            <a class="product-link" href="#">
+              <span class="product-name">Любительская селфи-палка</span>
+              <strong class="product-cost" title="Цена:">500 руб.</strong>
+            </a>
+            <ul class="product-to-container">
+              <li class="product-item-button">
 }
 
 .breadcrumbs-item::after {
   content: url(../img/nav-arrow.png);
 }
 
-
-.filter-title,
-.ranking-title {
-color: #000000;
-font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
-font-size: 16px;
-font-weight: 400;
-text-transform: uppercase;
-letter-spacing: 0.91px;
+.filter-title, .ranking-title {
+  color: #000000;
+  font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
 }
 
 fieldset {
@@ -446,29 +520,28 @@ fieldset {
 
 legend {
   border-top: 2px solid black;
-width: 93px;
-height: 12px;
-font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
-font-size: 18px;
-font-weight: 400;
-letter-spacing: 0.18px;
+  width: 93px;
+  height: 12px;
+  font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
 }
 
-
 .filter-label {
-font-size: 14px;
-font-weight: 300;
-line-height: 40px;
-letter-spacing: 0.14px;
-font-family: 'open sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+  font-family: 'open sans', 'Arial', sans-serif;
 }
 
 .ranking-link {
-opacity: 0.3;
-font-family: 'open sans', 'Arial', sans-serif;
-font-size: 14px;
-font-weight: 400;
-line-height: 18px;
+  opacity: 0.3;
+  font-family: 'open sans', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 .use-type {
@@ -476,18 +549,18 @@ line-height: 18px;
 }
 
 .product-name {
-font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
-font-size: 18px;
-font-weight: 400;
-letter-spacing: 0.18px;
+  font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
 }
 
 .product-cost {
   font-family: 'Gilroy-Light', 'Arial', sans-serif;
-color: rgb(70, 70, 70);
-font-size: 16px;
-font-weight: 300;
-letter-spacing: 0.16px;
+  color: rgb(70, 70, 70);
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.16px;
 }
 
 .product-card {
@@ -508,11 +581,11 @@ letter-spacing: 0.16px;
 }
 
 .paginator {
-font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
-font-size: 16px;
-font-weight: 400;
-text-transform: uppercase;
-letter-spacing: 0.91px;
+  font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
 }
 
 .paginator-page-two,
@@ -521,11 +594,11 @@ letter-spacing: 0.91px;
 }
 
 .product-to-range {
-opacity: 0.5;
-font-size: 13px;
-font-weight: 300;
-line-height: 36px;
-letter-spacing: 0.13px;
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.13px;
 }
 
 .product-to-range:hover {

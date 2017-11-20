@@ -10,10 +10,10 @@
 
 <body>
   <header class="header">
+    <div class="header-logo">
+      <img class="header-logo-image" src="img/logo.png" width="164" height="36" alt="Магазин Девайс">
+    </div>
     <div class="container">
-      <div class="header-logo">
-        <img class="header-logo-image" src="img/logo.png" width="164" height="36" alt="Магазин Девайс">
-      </div>
       <form class="header-search-form" method="get" action="https://echo.htmlacademy.ru">
         <label class="header-search-label visually-hidden">Поиск по сайту</label>
         <input class="header-search-input" type="text" value="" title="Поле ввода для поиска по сайту" placeholder="Поиск по сайту">
@@ -27,7 +27,7 @@
     <nav class="navigation">
       <div class="catalog" title="Категории товаров">
         <button class="button catalog-button" type="button">Каталог товаров</button>
-        <ul class="catalog-list">
+        <ul class="catalog-list visually-hidden">
           <li class="catalog-item">
             <a class="catalog-item-link" href="#">Виртуальная реальность</a>
           </li>
@@ -125,6 +125,7 @@
       <input class="slider-switch-item visually-hidden" type="radio" name="slide-switch" title="Переключатель слайдов">
       <input class="slider-switch-item visually-hidden" type="radio" name="slide-switch" title="Переключатель слайдов">
     </div>
+
     <section class="product-categories">
       <h2 class="product-categories-title visually-hidden">Категории товаров</h2>
       <a class="product-categories-card-link" href="#">
@@ -280,7 +281,7 @@
 
   <div class="map-popup" title="Наш адрес: г. Москва, ул. Строителей, 15">
     <button class="map-popup-close" type="button">Закрыть</button>
-    <img class="map-popup-image" src="img/map-big.png" width="1000" height="599" alt="Наш адрес: г. Москва, ул. Строителей, 15">
+    <img class="map-popup-image" src="img/map-big.png" alt="Наш адрес: г. Москва, ул. Строителей, 15">
   </div>
 </body>
 
