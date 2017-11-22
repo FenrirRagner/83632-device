@@ -35,7 +35,8 @@ html {
 
 body {
   margin: 0 auto;
-  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: 'open sans light', 'Arial', sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -94,8 +95,12 @@ ul {
   width: 220px;
   background-image: url(../img/addion-1.png);
   background-repeat: repeat-x;
-  background-position: center;
+  background-position: 0 16px;
   text-align: center;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .detail-button:hover {
@@ -115,11 +120,9 @@ ul {
 .header {
   background-color: rgba(240, 197, 46, .5);
   min-width: 1160px;
-  margin-left: 20px;
-  margin-right: 20px;
   display: flex;
   flex-direction: column;
-  min-height: 300px;
+  min-height: 170px;
   margin-top: 40px;
 }
 
@@ -220,16 +223,30 @@ ul {
 
 /*navigation elements*/
 
-.catalog {
+.catalog-button:focus~.catalog-wrapper {
+  display: flex;
+  position: absolute;
   background-color: rgb(247, 226, 150);
+  z-index: 1;
+}
+
+.catalog {
+  position: relative;
   margin-left: 60px;
   width: 250px;
+}
+
+.catalog-wrapper{
+  min-height: 130px;
+  min-width: 1100px;
+  display: none;
 }
 
 .catalog-list {
   line-height: 36px;
   letter-spacing: .15px;
-  /*display: none;*/
+  padding: 0;
+  margin-right: 55px;
 }
 
 .catalog-button {
@@ -251,11 +268,6 @@ ul {
   opacity: .3;
   margin-left: 10px;
 }
-
-
-/*.catalog-button:focus+.catalog-list {
-  display: inline-block;
-}*/
 
 .navigation {
   display: flex;
@@ -289,11 +301,43 @@ ul {
 
 /*Sliders*/
 
+.slide {
+  position: relative;
+  display: flex;
+  margin-left: 90px;
+  margin-right: 60px;
+  margin-top: 20px;
+    margin-bottom: 31px;
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  left: -90px;
+  display: block;
+  width: 1160px;
+  height: 129px;
+  top: -20px;
+  background-color: rgba(240, 197, 46, .5);
+  z-index: -1;
+
+}
+
+.slide-container {
+  width: 390px;
+  margin-right: 120px;
+}
+
+.slide-wrapper {
+  width: 500px;
+}
+
 .slide-tagline {
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 47px;
   font-weight: 400;
   letter-spacing: .17px;
+  line-height: normal;
 }
 
 .slide-description {
@@ -302,16 +346,24 @@ ul {
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
+  margin-bottom: 40px;
+}
+
+.slide-ttx-table {
+  margin-top: 55px;
 }
 
 .slide-ttx-value {
+  width: 155px;
   font-family: 'Gilroy-Light', 'Arial', sans-serif;
   font-size: 36px;
   font-weight: 300;
   letter-spacing: .36px;
+  padding-bottom: 15px;
 }
 
 .slide-ttx-property {
+  width: 155px;
   color: #464646;
   font-size: 13px;
   font-weight: 300;
@@ -319,15 +371,49 @@ ul {
   letter-spacing: .13px;
 }
 
+.slide-ttx-value:nth-child(2),
+.slide-ttx-property:nth-child(2) {
+  width: 135px;
+}
 
 /*Services elements*/
 
-.services-label:active {
+.services {
+  display: flex;
+  background-color: rgb(229, 229, 229);
+  min-height: 288px;
+  min-width: 100%;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.services-form {
+  width: 280px;
+  min-height: 319px;
+  margin-right: 120px;
+  margin-left: 20px;
+  border-right: 8px solid #000000;
+}
+
+.services-label {
+  width: 160px;
+  height: 40px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.services-label:first-child {
+  margin-top: -20px;
+}
+
+.services-label:hover,
+.active-label {
   background-image: none;
   background-color: rgb(0, 0, 0);
   padding-top: 5px;
   padding-bottom: 5px;
   padding-right: 118px;
+  width: 278px;
   color: rgb(247, 225, 132);
 }
 
@@ -340,6 +426,7 @@ ul {
 }
 
 .services-content-text {
+  width: 460px;
   color: #464646;
   font-family: 'open sans light', 'Arial', sans-serif;
   letter-spacing: 0.15px;
@@ -348,12 +435,20 @@ ul {
 
 /*Popular categories*/
 
+.product-categories {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 186px;
+}
+
 .product-categories-name {
   color: #000000;
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  letter-spacing: 0.18px;
+  line-height: 20px;
+  width: 160px;
+  margin-top: 35px;
 }
 
 .card-image-wrapper {
@@ -492,13 +587,6 @@ ul {
   font-weight: 300;
   line-height: 36px;
   letter-spacing: 0.14px;
-            </div>
-            <a class="product-link" href="#">
-              <span class="product-name">Любительская селфи-палка</span>
-              <strong class="product-cost" title="Цена:">500 руб.</strong>
-            </a>
-            <ul class="product-to-container">
-              <li class="product-item-button">
 }
 
 .breadcrumbs-item::after {
