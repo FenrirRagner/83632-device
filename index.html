@@ -10,20 +10,20 @@
 
 <body>
   <header class="header">
-    <div class="header-logo">
-      <img class="header-logo-image" src="img/logo.png" width="164" height="36" alt="Магазин Девайс">
-    </div>
     <div class="container">
+	  <div class="header-logo">
+      <img class="header-logo-image" src="img/logo.png" width="164" height="36" alt="Магазин Девайс">
+		</div>
       <form class="header-search-form" method="get" action="https://echo.htmlacademy.ru">
         <label class="header-search-label visually-hidden">Поиск по сайту</label>
         <input class="header-search-input" type="text" value="" title="Поле ввода для поиска по сайту" placeholder="Поиск по сайту">
         <button class="button header-search-button" type="submit" title="Поиск по сайту">Найти</button>
       </form>
-
+	  <div class="user-navigation">
       <button class="button button-login" type="button">Войти</button>
       <button class="button button-compare" type="button">Сравнить</button>
       <button class="button button-cart" type="button">Корзина</button>
-    </div>
+	  </div>
     <nav class="navigation">
       <div class="catalog" title="Категории товаров">
         <button class="button catalog-button" type="button">Каталог товаров</button>
@@ -54,6 +54,7 @@
           </ul>
         </div>
       </div>
+
       <ul class="navigation-list">
           <li class="navigation-item">
           <a class="navigation-item-link" href="#">Доставка</a>
@@ -66,9 +67,11 @@
         </li>
       </ul>
     </nav>
+	 </div>
   </header>
 
   <main class="main">
+  <div class="container">
     <article class="slide">
       <div class="slide-container">
         <img class="slide-image" src="img/slider-1.png" width="385" height="486" alt="Палка для селфи">
@@ -168,35 +171,39 @@
         <h3 class="product-categories-name" title="Категория: Квадрокоптеры">Квадрокоптеры</h3>
       </a>
     </section>
+</div>
     <section class="services">
-      <h2 class="services-title visually-hidden">Сервисы</h2>
+      <div class="wrapper">
+        <h2 class="services-title visually-hidden">Сервисы</h2>
 
-      <form class="services-form" title="Сервисы магазина">
-        <label class="services-label detail-button active-label" for="delivery">Доставка</label>
-        <input class="services-input visually-hidden" type="radio" name="services-slide" id="delivery" title="Сервис доставки" checked>
+        <form class="services-form" title="Сервисы магазина">
+          <label class="services-label detail-button active-label" for="delivery">Доставка</label>
+          <input class="services-input visually-hidden" type="radio" name="services-slide" id="delivery" title="Сервис доставки" checked>
 
-        <label class="services-label detail-button" for="warranty">Гарантия</label>
-        <input class="services-input visually-hidden" type="radio" name="services-slide" id="warranty" title="Сервис гарантий">
+          <label class="services-label detail-button" for="warranty">Гарантия</label>
+          <input class="services-input visually-hidden" type="radio" name="services-slide" id="warranty" title="Сервис гарантий">
 
-        <label class="services-label detail-button" for="credit">Кредит</label>
-        <input class="services-inpu visually-hidden" type="radio" name="services-slide" id="credit" title="Сервис предоставления кредитов">
-      </form>
+          <label class="services-label detail-button" for="credit">Кредит</label>
+          <input class="services-inpu visually-hidden" type="radio" name="services-slide" id="credit" title="Сервис предоставления кредитов">
+        </form>
 
-      <div class="services-content">
-        <div class="services-content-block">
-          <h3 class="services-content-title">Доставка</h3>
-          <p class="services-content-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </div>
-        <div class="services-content-block visually-hidden">
-          <h3 class="services-content-title">Гарантия</h3>
-          <p class="services-content-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-        </div>
-        <div class="services-content-block visually-hidden">
-          <h3 class="services-content-title">Кредит</h3>
-          <p class="services-content-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-        </div>
+        <div class="services-content">
+          <div class="services-content-block">
+            <h3 class="services-content-title">Доставка</h3>
+            <p class="services-content-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div class="services-content-block visually-hidden">
+            <h3 class="services-content-title">Гарантия</h3>
+            <p class="services-content-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </div>
+          <div class="services-content-block visually-hidden">
+            <h3 class="services-content-title">Кредит</h3>
+            <p class="services-content-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
+      </div>
       </div>
     </section>
+<div class="container">
     <section class="brands">
       <h2 class="brands-title visually-hidden">Бренды</h2>
       <ul class="brands-items">
@@ -235,6 +242,7 @@
         <a class="contacts-link detail-button" href="#">Напишите нам</a>
       </section>
     </div>
+	</div>
   </main>
   <footer class="footer">
     <div class="container">
@@ -274,13 +282,12 @@
       </section>
     </div>
   </footer>
-  <div>
+  <div class="popup-write-us">
     <button class="write-us-close" type="button">Закрыть</button>
     <form class="write-us" method="get" action="https://echo.htmlacademy.ru">
       <label class="write-us-name" for="write-us-user-name">Ваше имя:</label>
-      <input class="write-us-input" type="text" required name="user-name" id="write-us-user-name" placeholder="Представьтесь, пожалуйста">
-
       <label class="write-us-email" for="write-us-user-email">Ваш e-mail:</label>
+      <input class="write-us-input" type="text" required name="user-name" id="write-us-user-name" placeholder="Представьтесь, пожалуйста">
       <input class="write-us-input" type="email" required name="user-email" id="write-us-user-email" placeholder="E-mali для отправки ответа">
 
       <label class="write-us-text" for="write-us-user-text">Текст письма:</label>
