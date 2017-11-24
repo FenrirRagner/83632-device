@@ -81,7 +81,7 @@
       <input class="slider-switch-item" type="radio" name="slide-switch" title="Переключатель слайдов">
     </div>
 
-    <article class="slide">
+    <article class="slide active-slide">
       <div class="slide-container">
         <img class="slide-image" src="img/slider-1.png" width="385" height="486" alt="Палка для селфи">
       </div>
@@ -178,28 +178,29 @@
     <section class="services">
       <div class="wrapper">
         <h2 class="services-title visually-hidden">Сервисы</h2>
+        <ul class="services-list" title="Сервисы магазина">
+          <li class="services-item">
+            <button class="button services-button detail-button active-label">Доставка</button>
+          </li>
+          <li class="services-item">
+            <button class="button services-button detail-button">Гарантия</button>
+          </li>
+          <li class="services-item">
+            <button class="button services-button detail-button">Кредит</button>
+          </li>
+        </ul>
 
-        <form class="services-form" title="Сервисы магазина">
-          <label class="services-label detail-button active-label" for="delivery">Доставка</label>
-          <input class="services-input visually-hidden" type="radio" name="services-slide" id="delivery" title="Сервис доставки" checked>
-
-          <label class="services-label detail-button" for="warranty">Гарантия</label>
-          <input class="services-input visually-hidden" type="radio" name="services-slide" id="warranty" title="Сервис гарантий">
-
-          <label class="services-label detail-button" for="credit">Кредит</label>
-          <input class="services-inpu visually-hidden" type="radio" name="services-slide" id="credit" title="Сервис предоставления кредитов">
-        </form>
 
         <div class="services-content">
-          <div class="services-content-block">
+          <div class="services-content-block services-content-block__delivery">
             <h3 class="services-content-title">Доставка</h3>
             <p class="services-content-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
-          <div class="services-content-block ">
+          <div class="services-content-block services-content-block__warranty">
             <h3 class="services-content-title">Гарантия</h3>
             <p class="services-content-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </div>
-          <div class="services-content-block">
+          <div class="services-content-block services-content-block__credit">
             <h3 class="services-content-title">Кредит</h3>
             <p class="services-content-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </div>
