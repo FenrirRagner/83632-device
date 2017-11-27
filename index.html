@@ -212,16 +212,16 @@
         <h2 class="brands-title visually-hidden">Бренды</h2>
         <ul class="brands-items">
           <li class="brands-item">
-            <a class="brands-link" href="#" title="DJI"><img class="brands-image" src="img/logo-1-dji-bw.png" width="260" height="100" alt="DJI">DJI</a>
+            <a class="brands-link img-dji" href="#" title="DJI"><img class="brands-image" src="img/logo-1-dji-bw.png" width="260" height="100" alt="DJI">DJI</a>
           </li>
           <li class="brands-item">
-            <a class="brands-link" href="#" title="SPgadgets"><img class="brands-image" src="img/logo-2-sp-bw.png" width="260" height="100" alt="spgadgets">SPgadgets</a>
+            <a class="brands-link img-spg" href="#" title="SPgadgets"><img class="brands-image" src="img/logo-2-sp-bw.png" width="260" height="100" alt="spgadgets">SPgadgets</a>
           </li>
           <li class="brands-item">
-            <a class="brands-link" href="#" title="GO Pro"><img class="brands-image" src="img/logo-3-gp-bw.png" width="260" height="100" alt="gopro">GO Pro</a>
+            <a class="brands-link img-gop" href="#" title="GO Pro"><img class="brands-image" src="img/logo-3-gp-bw.png" width="260" height="100" alt="gopro">GO Pro</a>
           </li>
           <li class="brands-item">
-            <a class="brands-link" href="#" title="Vive"><img class="brands-image" src="img/logo-4-vive-bw.png" width="260" height="100" alt="vive">Vive</a>
+            <a class="brands-link img-viv" href="#" title="Vive"><img class="brands-image" src="img/logo-4-vive-bw.png" width="260" height="100" alt="vive">Vive</a>
           </li>
         </ul>
       </section>
@@ -284,23 +284,27 @@
       </section>
     </div>
   </footer>
-  <div class="popup-write-us">
-    <button class="write-us-close" type="button">Закрыть</button>
-    <form class="write-us" method="get" action="https://echo.htmlacademy.ru">
-      <label class="write-us-name" for="write-us-user-name">Ваше имя:</label>
-      <label class="write-us-email" for="write-us-user-email">Ваш e-mail:</label>
-      <input class="write-us-input" type="text" required name="user-name" id="write-us-user-name" placeholder="Представьтесь, пожалуйста">
-      <input class="write-us-input" type="email" required name="user-email" id="write-us-user-email" placeholder="E-mali для отправки ответа">
+  <div class="popup popup-write-us">
+    <div class="popup-container">
+      <button class="popup-close" type="button">Закрыть</button>
+      <form class="write-us" method="get" action="https://echo.htmlacademy.ru">
+        <label class="write-us-name" for="write-us-user-name">Ваше имя:</label>
+        <label class="write-us-email" for="write-us-user-email">Ваш e-mail:</label>
+        <input class="write-us-input" type="text" required name="user-name" id="write-us-user-name" placeholder="Представьтесь, пожалуйста">
+        <input class="write-us-input" type="email" required name="user-email" id="write-us-user-email" placeholder="E-mali для отправки ответа">
 
-      <label class="write-us-text" for="write-us-user-text">Текст письма:</label>
-      <textarea class="write-us-text-input" name="text-message" id="write-us-user-text" placeholder="В свободной форме"></textarea>
-      <button class="write-us-submit detail-button" type="submit">Отправить</button>
-    </form>
+        <label class="write-us-text" for="write-us-user-text">Текст письма:</label>
+        <textarea class="write-us-text-input" name="text-message" id="write-us-user-text" placeholder="В свободной форме"></textarea>
+        <button class="write-us-submit detail-button button" type="submit">Отправить</button>
+      </form>
+    </div>
   </div>
 
-  <div class="map-popup" title="Наш адрес: г. Москва, ул. Строителей, 15">
-    <button class="map-popup-close" type="button">Закрыть</button>
-    <img class="map-popup-image" src="img/map-big.png" alt="Наш адрес: г. Москва, ул. Строителей, 15">
+  <div class="popup map-popup" title="Наш адрес: г. Москва, ул. Строителей, 15">
+    <div class="popup-container">
+      <button class="popup-close" type="button">Закрыть</button>
+      <img class="map-popup-image" src="img/map-big.png" alt="Наш адрес: г. Москва, ул. Строителей, 15">
+    </div>
   </div>
 </body>
 
