@@ -590,10 +590,44 @@ ul {
 
 .slider-switch {
     position: absolute;
+    bottom: 128px;
+    right: 24px;
+    min-width: 80px;
 
-    display: none;
 }
 
+.slider-switch-item {
+  display: none;
+}
+
+.slider-switch-label {
+  position: relative;
+  margin-right: 18px;
+
+
+}
+
+.slider-switch-label:last-child {
+  margin-right: -4px;
+}
+
+.slider-switch-label::before {
+  content: '';
+margin-bottom: 20px;
+margin-left: 2px;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #000000;
+
+}
+
+.slider-switch-item:checked +.slider-switch-label::before {
+
+  border: 4px double #000000;
+}
 
 /*Popular categories*/
 
@@ -991,6 +1025,8 @@ background-image: url(../img/logo-4-vive.png);
 
 .footer-social {
     height: 72px;
+    margin-left: 30px;
+
 }
 
 .social-items {
@@ -1000,14 +1036,14 @@ background-image: url(../img/logo-4-vive.png);
     justify-content: space-around;
 
     width: 160px;
-    margin-left: 500px;
+    margin-left: auto;
     padding: 0;
 }
 
 .social-items::before {
     position: absolute;
     top: 30px;
-    left: 0;
+    left: -30px;
 
     width: 80px;
     height: 8px;
