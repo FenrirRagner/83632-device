@@ -221,7 +221,6 @@ ul {
 
 .header-search-input:focus+.header-search-button {
   position: absolute;
-  position: absolute;
   top: -5px;
 
   width: 83px;
@@ -422,8 +421,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  min-width: 500px;
   margin: 0;
   margin-right: 20px;
   margin-left: auto;
@@ -461,16 +458,16 @@ ul {
   position: relative;
 
   display: none;
-
-  min-width: 1040px;
+  padding-left: 30px;
+  width: 1040px;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 95px;
 }
 
-.active-slide {
+.slide-active {
   display: flex;
-  justify-content: flex-end;
+
 }
 
 .slide::before {
@@ -490,14 +487,14 @@ ul {
 }
 
 .slide-container {
-  min-width: 500px;
+  flex: 1;
   margin-right: 10px;
 }
 
 .slide-wrapper {
   position: relative;
 
-  width: 500px;
+  flex: 1;
 }
 
 .slide-tagline {
@@ -650,12 +647,10 @@ ul {
 
 .product-categories {
   display: flex;
-  flex-basis: 160px;
-  flex-grow: 1;
-  flex-shrink: 0;
+  width: 1160px;
   justify-content: space-between;
 
-  margin-bottom: 169px;
+  margin-bottom: 170px;
 }
 
 .product-categories-name {
@@ -828,8 +823,9 @@ ul {
 
 .brands-items {
   display: flex;
+  width: 1160px;
   justify-content: space-between;
-
+  padding: 0;
   margin: 0;
   margin-bottom: 100px;
 }
@@ -1017,7 +1013,8 @@ ul {
   padding: 0;
 }
 
-.footer-user-navigation-item, .footer-service-navigation-item {
+.footer-user-navigation-item,
+.footer-service-navigation-item {
   display: inline-block;
 
   text-align: center;
