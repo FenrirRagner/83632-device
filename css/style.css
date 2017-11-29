@@ -259,30 +259,38 @@ ul {
 }
 
 .button-login {
-  margin-right: 200px;
+  flex-grow: 4;
 }
 
 .user-profile {
   margin-top: 3px;
-  margin-right: -40px;
+  margin-right: 20px;
 }
 
 .button-logout {
   opacity: .3;
+  flex-grow: 1;
+  margin-right: 20px;
 }
 
 .button-compare {
   display: block;
 
   height: 36px;
-  margin-right: 20px;
+  flex-grow: 1;
 }
 
-.button-login, .user-profile, .button-compare, .button-cart {
+.button-login,
+.user-profile,
+.button-compare,
+.button-cart,
+.button-logout {
   position: relative;
+    text-align: left;
 }
 
-.button-login::before, .user-profile::before {
+.button-login::before,
+.user-profile::before {
   position: absolute;
   left: -25px;
 
