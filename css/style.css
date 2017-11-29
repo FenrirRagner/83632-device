@@ -1364,7 +1364,6 @@ ul {
 
   width: 330px;
   padding-left: 60px;
-
   background-color: #eeeeee;
 }
 
@@ -1614,21 +1613,33 @@ legend {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
+  flex: 1;
   width: 760px;
-  margin-left: 70px;
+  margin-left: 75px;
+}
+
+.product-card {
+    margin-bottom: 50px;
 }
 
 .product-to-cart {
   margin: 0 auto;
 }
 
+.product-link {
+  display: block;
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-name {
   letter-spacing: .18px;
-
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
   font-weight: 400;
+  width: 260px;
+  line-height: normal;
 }
 
 .product-cost {
@@ -1667,6 +1678,24 @@ legend {
   visibility: visible;
 
   cursor: pointer;
+}
+
+.product-new::after {
+  content: 'new';
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+  opacity: .2;
+  font-size: 14px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 14px;
+
 }
 
 .paginator {
