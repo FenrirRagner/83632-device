@@ -90,11 +90,16 @@ ul {
 
 /*Common elements*/
 
+a:hover.detail-button {
+  opacity: 1;
+}
+
 .button {
   padding: 0;
 
   cursor: pointer;
   letter-spacing: .15px;
+  position: relative;
 
   border: none;
   background-color: transparent;
@@ -106,7 +111,6 @@ ul {
 
 .detail-button {
   display: block;
-
   min-width: 220px;
   margin-bottom: 10px;
   padding: 5px;
@@ -115,21 +119,33 @@ ul {
   letter-spacing: 2.15px;
   text-transform: uppercase;
   word-wrap: break-word;
+  position: relative;
 
-  color: #000;
-  background-image: url(../img/addion-1.png);
-  background-repeat: repeat-x;
 
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
 
-.detail-button:hover, .detail-button:focus {
+.detail-button:before,
+.button::before {
+  content: '';
+  position: absolute;
+  background: #f0c52e;
+  height: 8px;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.detail-button:hover::before, .detail-button:focus {
   padding-top: 5px;
   padding-bottom: 5px;
-
-  opacity: 1;
+  height: 40px;
   background-repeat: repeat;
 }
 
@@ -491,9 +507,7 @@ ul {
 
 .slide {
   position: relative;
-
   display: none;
-
   width: 1040px;
   margin: 0 auto;
   margin-top: 20px;
@@ -687,7 +701,7 @@ ul {
   background-color: transparent;
 }
 
-.slider-switch-item:checked+.slider-switch-label::before {
+.slider-switch-item:checked +.slider-switch-label::before {
   border: 4px double #000000;
 }
 
@@ -809,9 +823,7 @@ ul {
 
 .services-button:hover, .active-label {
   width: 277px;
-  padding-top: 2px;
   padding-right: 118px;
-  padding-bottom: 2px;
   padding-left: 10px;
 
   letter-spacing: 3.8px;
