@@ -125,10 +125,10 @@ a:hover.detail-button {
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
   font-weight: 400;
+  z-index: 1;
 }
 
-.detail-button:before,
-.button::before {
+.detail-button:before {
   content: '';
   position: absolute;
   background: #f0c52e;
@@ -779,7 +779,6 @@ a:hover.detail-button {
 
 .services {
   min-width: 1160px;
-
   background-color: rgb(229, 229, 229);
 }
 
@@ -831,6 +830,12 @@ a:hover.detail-button {
   color: rgb(247, 225, 132);
   background-color: rgb(0, 0, 0);
   background-image: none;
+}
+
+.active-label.detail-button::before,
+ .services-button:hover.detail-button::before{
+  content: '';
+  background-color: #000000;
 }
 
 .services-content {
