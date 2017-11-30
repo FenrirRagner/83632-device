@@ -1850,6 +1850,19 @@ legend {
 
 }
 
+.paginator {
+  letter-spacing: .91px;
+  text-transform: uppercase;
+
+  font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.paginator-page-two, .paginator-page-three {
+  opacity: .3;
+}
+
 .product-to-range {
   letter-spacing: .13px;
 
@@ -1866,51 +1879,4 @@ legend {
 
 .product-to-range:active {
   opacity: .2;
-}
-
-.paginator {
-  display: flex;
-  width: 760px;
-  margin-left: 75px;
-  letter-spacing: .91px;
-  text-transform: uppercase;
-  background-color: #ebebeb;
-  min-height: 70px;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-
-  font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.paginator-prev {
-  margin-left: 30px;
-}
-
-.paginator-next {
-  margin-right: 30px;
-}
-
-.paginator-pages {
-  padding: 0;
-  margin: 0;
-}
-
-.paginator-page {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  padding: 0;
-  margin: 0;
-  margin-right: 30px;
-}
-
-.paginator-page:last-child {
-  margin-right: 0;
-}
-
-.page-two, .page-three {
-  opacity: .3;
 }
