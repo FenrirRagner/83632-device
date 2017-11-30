@@ -56,6 +56,7 @@ a {
   text-decoration: none;
 
   color: #000;
+  background-position: 0 16px;
 }
 
 a:hover {
@@ -94,7 +95,8 @@ ul {
   letter-spacing: .15px;
 
   border: none;
-  background-color: rgba(255, 0, 0, 0);
+  background-color: transparent;
+  background-position: center;
 
   font-family: 'open sans', 'Arial', sans-serif;
   line-height: 36px;
@@ -103,12 +105,10 @@ ul {
 .detail-button {
   display: block;
 
-  width: 220px;
+  min-width: 220px;
   margin-bottom: 10px;
-  padding: 0;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
+  padding: 5px;
+  word-wrap: break-word;
   text-align: center;
   letter-spacing: 2.15px;
   text-transform: uppercase;
@@ -116,7 +116,6 @@ ul {
   color: #000;
   background-image: url(../img/addion-1.png);
   background-repeat: repeat-x;
-  background-position: 0 16px;
 
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
@@ -345,10 +344,7 @@ ul {
 
 /*navigation elements*/
 
-
-/* .catalog:hover .catalog-wrapper */
-
-.navigation:hover .catalog-wrapper {
+.catalog:hover .catalog-wrapper {
   position: absolute;
   z-index: 1;
   left: -60px;
@@ -560,6 +556,11 @@ ul {
   line-height: 30px;
 }
 
+.slide-link {
+  display: inline-block;
+  margin: 0;
+}
+
 .slide-ttx-table {
   margin-top: 55px;
 }
@@ -731,19 +732,13 @@ ul {
 
 .services-item {
   width: 160px;
-  height: 40px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+
 }
 
 .services-button {
-  width: 160px;
-  padding: 0;
-  padding-top: 1px;
-}
-
-.services-item {
-  margin-bottom: 25px;
+  min-width: 160px;
 }
 
 .services-item:first-child {
@@ -951,7 +946,7 @@ ul {
 
 .contacts-link, .about-link {
   min-width: 260px;
-
+  display: inline-block;
   letter-spacing: 3.8px;
 }
 
