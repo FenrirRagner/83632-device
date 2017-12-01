@@ -1609,6 +1609,10 @@ legend {
   font-weight: 300;
   position: relative;
   padding-top: 45px;
+  padding-left: 0;
+  margin-right: 55px;
+  z-index: 2;
+  display: inline-block;
 }
 
 .button-range-start::before,
@@ -1621,7 +1625,40 @@ legend {
   border-radius: 50%;
   background-color: #ffffff;
   box-shadow: 0 2px 0.5px;
+    bottom: 26px;
+    z-index: 1;
+    cursor: pointer;
+}
 
+.button-range-start::before {
+  left: -6px;
+}
+
+.button-range-end::before {
+  left: 15px;
+}
+
+.button-range-start::after,
+.button-range-end::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  top: 32px;
+  z-index: -1;
+  outline: none;
+}
+
+.button-range-start::after {
+    width: 190px;
+      left: 10px;
+    background-color: #dbdbdb;
+
+}
+
+.button-range-end::after {
+  background-color: #91c92f;
+  width: 110px;
+  right: 28px;
 }
 
 .filter-label, .filter-colors-label, .filter-bt-label {
