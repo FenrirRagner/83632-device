@@ -37,12 +37,12 @@
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -95,11 +95,12 @@ a:hover.detail-button {
 }
 
 .button {
+  position: relative;
+
   padding: 0;
 
   cursor: pointer;
   letter-spacing: .15px;
-  position: relative;
 
   border: none;
   background-color: transparent;
@@ -110,7 +111,11 @@ a:hover.detail-button {
 }
 
 .detail-button {
+  position: relative;
+  z-index: 1;
+
   display: block;
+
   min-width: 220px;
   margin-bottom: 10px;
   padding: 5px;
@@ -119,33 +124,34 @@ a:hover.detail-button {
   letter-spacing: 2.15px;
   text-transform: uppercase;
   word-wrap: break-word;
-  position: relative;
-
 
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  z-index: 1;
 }
 
 .detail-button:before {
-  content: '';
   position: absolute;
-  background: #f0c52e;
-  height: 8px;
-  width: 100%;
+  z-index: -1;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+
+  width: 100%;
+  height: 8px;
   margin: auto;
-  z-index: -1;
+
+  content: '';
+
+  background: #f0c52e;
 }
 
 .detail-button:hover::before, .detail-button:focus {
+  height: 40px;
   padding-top: 5px;
   padding-bottom: 5px;
-  height: 40px;
+
   background-repeat: repeat;
 }
 
@@ -165,10 +171,10 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   width: 1200px;
   min-height: 170px;
@@ -272,17 +278,17 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   -webkit-box-align: start;
-          align-items: flex-start;
-      -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-align: start;
   -ms-flex-preferred-size: 100px;
-      flex-basis: 100px;
+  flex-basis: 100px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   min-width: 475px;
   margin-top: 3px;
@@ -291,8 +297,8 @@ a:hover.detail-button {
 
 .button-login {
   -webkit-box-flex: 4;
-      -ms-flex-positive: 4;
-          flex-grow: 4;
+  -ms-flex-positive: 4;
+  flex-grow: 4;
 }
 
 .user-profile {
@@ -302,8 +308,8 @@ a:hover.detail-button {
 
 .button-logout {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 
   margin-right: 20px;
 
@@ -313,24 +319,19 @@ a:hover.detail-button {
 .button-compare {
   display: block;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 
   height: 36px;
 }
 
-.button-login,
-.user-profile,
-.button-compare,
-.button-cart,
-.button-logout {
+.button-login, .user-profile, .button-compare, .button-cart, .button-logout {
   position: relative;
 
-    text-align: left;
+  text-align: left;
 }
 
-.button-login::before,
-.user-profile::before {
+.button-login::before, .user-profile::before {
   position: absolute;
   left: -25px;
 
@@ -454,10 +455,10 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 
   width: 1200px;
 }
@@ -467,10 +468,10 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   margin: 0;
   margin-right: 20px;
@@ -507,7 +508,9 @@ a:hover.detail-button {
 
 .slide {
   position: relative;
+
   display: none;
+
   width: 1040px;
   margin: 0 auto;
   margin-top: 20px;
@@ -519,7 +522,6 @@ a:hover.detail-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
 }
 
 .slide::before {
@@ -540,8 +542,8 @@ a:hover.detail-button {
 
 .slide-container {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 
   margin-right: 10px;
 }
@@ -550,8 +552,8 @@ a:hover.detail-button {
   position: relative;
 
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .slide-tagline {
@@ -683,7 +685,7 @@ a:hover.detail-button {
 
 .slider-switch-label::before {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
 
   display: inline-block;
@@ -701,7 +703,7 @@ a:hover.detail-button {
   background-color: transparent;
 }
 
-.slider-switch-item:checked +.slider-switch-label::before {
+.slider-switch-item:checked+.slider-switch-label::before {
   border: 4px double #000000;
 }
 
@@ -713,8 +715,8 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   width: 1160px;
   margin-bottom: 170px;
@@ -737,11 +739,11 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-          align-items: center;
-      -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 
   width: 160px;
   height: 160px;
@@ -754,8 +756,8 @@ a:hover.detail-button {
 
 .product-categories-card-link:nth-child(3) .card-image-wrapper {
   -webkit-box-align: end;
-          align-items: flex-end;
-      -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-align: end;
 }
 
 .product-categories-card-link:active .product-categories-card-image {
@@ -779,6 +781,7 @@ a:hover.detail-button {
 
 .services {
   min-width: 1160px;
+
   background-color: rgb(229, 229, 229);
 }
 
@@ -809,7 +812,6 @@ a:hover.detail-button {
   width: 160px;
   margin: 0;
   margin-bottom: 20px;
-
 }
 
 .services-button {
@@ -832,9 +834,9 @@ a:hover.detail-button {
   background-image: none;
 }
 
-.active-label.detail-button::before,
- .services-button:hover.detail-button::before{
+.active-label.detail-button::before, .services-button:hover.detail-button::before {
   content: '';
+
   background-color: #000000;
 }
 
@@ -845,12 +847,12 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 
   margin-top: -65px;
 }
@@ -907,8 +909,8 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   width: 1160px;
   margin: 0;
@@ -960,13 +962,13 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
-          margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 .about, .contacts {
@@ -1064,11 +1066,11 @@ a:hover.detail-button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 
   width: 1200px;
   min-height: 325px;
@@ -1083,17 +1085,17 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   -webkit-box-align: start;
-          align-items: flex-start;
-      -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-align: start;
   -ms-flex-preferred-size: 340px;
-      flex-basis: 340px;
+  flex-basis: 340px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   margin-top: 10px;
 }
@@ -1105,11 +1107,11 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-          align-items: center;
-      -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-align: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   margin-top: 0;
   margin-bottom: 0;
@@ -1130,8 +1132,7 @@ a:hover.detail-button {
   padding: 0;
 }
 
-.footer-user-navigation-item,
-.footer-service-navigation-item {
+.footer-user-navigation-item, .footer-service-navigation-item {
   display: inline-block;
 
   text-align: center;
@@ -1153,11 +1154,11 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 
   width: 160px;
   margin-left: auto;
@@ -1217,8 +1218,8 @@ a:hover.detail-button {
 
 .footer-social {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .social-link-htmlAcademy {
@@ -1257,7 +1258,7 @@ a:hover.detail-button {
 
   background-color: #ffffff;
   -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
-          box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
 .popup-write-us {
@@ -1276,10 +1277,10 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   margin-top: 90px;
 }
@@ -1345,14 +1346,14 @@ a:hover.detail-button {
 
 .popup-close::after {
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .popup-close::before {
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .write-us-name, .write-us-email, .write-us-text {
@@ -1413,10 +1414,10 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   width: 1200px;
   min-height: 170px;
@@ -1503,8 +1504,8 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   min-width: 1160px;
 }
@@ -1600,34 +1601,41 @@ legend {
 }
 
 .button-range {
-  border: none;
-  background-color: transparent;
-  color: rgba(0, 0, 0, 0.2);
-  font-family: 'Gilroy', 'Arial Bold', sans-serif;
-  font-size: 14px;
-  line-height: 22.27px;
-  font-weight: 300;
   position: relative;
+  z-index: 2;
+
+  display: inline-block;
+
+  margin-right: 55px;
   padding-top: 45px;
   padding-left: 0;
-  margin-right: 55px;
-  z-index: 2;
-  display: inline-block;
+
+  color: rgba(0, 0, 0, 0.2);
+  border: none;
+  background-color: transparent;
+
+  font-family: 'Gilroy', 'Arial Bold', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22.27px;
 }
 
-.button-range-start::before,
-.button-range-end::before {
-  content: '	\01F784';
-  font-size: 20px;
+.button-range-start::before, .button-range-end::before {
   position: absolute;
+  z-index: 1;
+  bottom: 26px;
+
   width: 20px;
   height: 20px;
+
+  content: '	\01F784';
+  cursor: pointer;
+
   border-radius: 50%;
   background-color: #ffffff;
   box-shadow: 0 2px 0.5px;
-    bottom: 26px;
-    z-index: 1;
-    cursor: pointer;
+
+  font-size: 20px;
 }
 
 .button-range-start::before {
@@ -1638,27 +1646,32 @@ legend {
   left: 15px;
 }
 
-.button-range-start::after,
-.button-range-end::after {
-  content: '';
+.button-range-start::after, .button-range-end::after {
   position: absolute;
-  height: 2px;
-  top: 32px;
   z-index: -1;
+  top: 32px;
+
+  height: 2px;
+
+  content: '';
+
   outline: none;
 }
 
 .button-range-start::after {
-    width: 190px;
-      left: 10px;
-    background-color: #dbdbdb;
+  left: 10px;
 
+  width: 190px;
+
+  background-color: #dbdbdb;
 }
 
 .button-range-end::after {
-  background-color: #91c92f;
-  width: 110px;
   right: 28px;
+
+  width: 110px;
+
+  background-color: #91c92f;
 }
 
 .filter-label, .filter-colors-label, .filter-bt-label {
@@ -1711,8 +1724,8 @@ legend {
 
   content: '\0000AC';
   -webkit-transform: rotate(-225deg);
-      -ms-transform: rotate(-225deg);
-          transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
 
   font-size: 40px;
 }
@@ -1768,11 +1781,11 @@ legend {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-          align-items: center;
-      -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-align: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   margin-bottom: 70px;
 
@@ -1795,8 +1808,8 @@ legend {
 
 .ranking-list {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 
   margin: 0;
   margin-left: 45px;
@@ -1839,20 +1852,20 @@ legend {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   width: 760px;
   margin-left: 75px;
 }
 
 .product-card {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .product-to-cart {
@@ -1865,8 +1878,8 @@ legend {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   margin-top: 23px;
 }
@@ -1939,7 +1952,6 @@ legend {
 
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 14px;
-
 }
 
 .product-to-range {
@@ -1965,13 +1977,13 @@ legend {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-align: center;
-          align-items: center;
-      -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-align: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   width: 760px;
   min-height: 70px;
@@ -1988,8 +2000,7 @@ legend {
   font-weight: 400;
 }
 
-.paginator-prev,
-.paginator-next {
+.paginator-prev, .paginator-next {
   letter-spacing: 3.5px;
 }
 
