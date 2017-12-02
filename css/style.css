@@ -1239,21 +1239,25 @@ a:hover.detail-button {
 
 /*Modal window. Write us.*/
 
-.popup {
+.popup-write-us,
+.map-popup  {
   position: fixed;
   top: 120px;
   left: 50%;
-  /*display: none;*/
-}
-
-.popup-write-us, .map-popup {
   display: none;
 }
 
-.popup-write-us, .map-popup-image {
+.popup-show {
+  display: block;
+  z-index: 4;
+}
+
+.popup-write-us,
+.map-popup-image {
   width: 960px;
   height: 553px;
   margin-left: -480px;
+  position: fixed;
 
   background-color: #ffffff;
   -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
