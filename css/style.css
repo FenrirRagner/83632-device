@@ -1653,8 +1653,8 @@ legend {
 }
 
 .popup-show {
-  display: block;
   z-index: 1;
+  display: block;
   -webkit-animation: bounce .5s;
   animation: bounce .5s;
 }
@@ -1665,10 +1665,10 @@ legend {
 }
 
 .popup-write-us, .popup-map {
+  position: fixed;
   width: 960px;
   height: 553px;
   margin-left: -480px;
-  position: fixed;
   background-color: #ffffff;
   -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
@@ -1687,6 +1687,17 @@ legend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.popup-map-image {
+  position: absolute;
+  z-index: 1;
+}
+
+.popup-map-iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
 }
 
 @-webkit-keyframes bounce {
@@ -1769,12 +1780,12 @@ legend {
 
 .popup-close {
   position: absolute;
+  z-index: 10;
   top: 22px;
   right: 22px;
   width: 55px;
   height: 55px;
   cursor: pointer;
-  z-index: 10;
   opacity: .5;
   border: 0;
   border-radius: 50%;
