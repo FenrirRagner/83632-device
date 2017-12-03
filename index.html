@@ -305,7 +305,7 @@
   </footer>
   <div class="popup popup-write-us">
     <div class="popup-container">
-      <button class="popup-close" type="button">Закрыть</button>
+      <button class="popup-close popup-close-write-us" type="button" title="Закрыть форму">Закрыть</button>
       <form class="write-us" method="get" action="https://echo.htmlacademy.ru">
         <label class="write-us-name" for="write-us-user-name">Ваше имя:</label>
         <label class="write-us-email" for="write-us-user-email">Ваш e-mail:</label>
@@ -314,39 +314,18 @@
 
         <label class="write-us-text" for="write-us-user-text">Текст письма:</label>
         <textarea class="write-us-text-input" name="text-message" id="write-us-user-text" placeholder="В свободной форме"></textarea>
-        <button class="write-us-submit detail-button button" type="submit">Отправить</button>
+        <button class="detail-button button" type="submit">Отправить</button>
       </form>
     </div>
   </div>
 
-  <div class="popup map-popup" title="Наш адрес: г. Москва, ул. Строителей, 15">
+  <div class="popup popup-map" title="Наш адрес: г. Москва, ул. Строителей, 15">
     <div class="popup-container">
-      <button class="popup-close" type="button">Закрыть</button>
-      <img class="map-popup-image" src="img/map-big.png" alt="Наш адрес: г. Москва, ул. Строителей, 15">
+      <button class="popup-close popup-close-map" type="button" title="Закрыть карту">Закрыть</button>
+      <img class="popup-map-image" src="img/map-big.png" alt="Наш адрес: г. Москва, ул. Строителей, 15">
     </div>
   </div>
-<script>
-  var linkWriteUs = document.querySelector(".contacts-link");
-  var popupWriteUs = document.querySelector(".popup-write-us");
-  var popupClose = popupWriteUs.querySelector(".popup-close");
-  var popupWriteUsLogin = popupWriteUs.querySelector("[name=user-name]");
-  var popupWriteUsForm = popupWriteUs.querySelector("form");
-  var popupWriteUsPass = popupWriteUs.querySelector("[name=user-email]");
-
-  linkWriteUs.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popupWriteUs.classList.add("popup-show");
-    popupWriteUsLogin.focus();
-  });
-
-  popupClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popupWriteUs.classList.remove("popup-show");
-  });
-  popupWriteUsForm.addEventListener("submit", function (evt) {
-    evt.preventDefault();
-  });
-</script>
+  <script src="js/modal-script.js"></script>
 </body>
 
 </html>
