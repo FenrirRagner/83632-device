@@ -4,6 +4,7 @@
   font-family: 'open sans';
   font-weight: 400;
   font-style: normal;
+
   src: url('../fonts/web/opensans.woff2') format('woff2');
 }
 
@@ -11,6 +12,7 @@
   font-family: 'open sans';
   font-weight: 300;
   font-style: normal;
+
   src: url('../fonts/web/opensanslight.woff2') format('woff2');
 }
 
@@ -18,6 +20,7 @@
   font-family: 'Gilroy-ExtraBold';
   font-weight: 400;
   font-style: normal;
+
   src: url('../fonts/web/gilroyextrabold.woff2') format('woff2');
 }
 
@@ -25,6 +28,7 @@
   font-family: 'Gilroy-Light';
   font-weight: 300;
   font-style: normal;
+
   src: url('../fonts/web/gilroylight.woff2') format('woff2');
 }
 
@@ -43,6 +47,7 @@ html {
 
 body {
   color: #000;
+
   font-family: 'open sans', 'Arial', sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -51,6 +56,7 @@ body {
 
 a {
   text-decoration: none;
+
   color: #000;
   background-position: 0 16px;
 }
@@ -69,12 +75,15 @@ ul {
 
 .visually-hidden {
   position: absolute;
+
   overflow: hidden;
   clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
+
   border: 0;
 }
 
@@ -87,12 +96,16 @@ a:hover.detail-button {
 
 .button {
   position: relative;
+
   padding: 0;
+
   cursor: pointer;
   letter-spacing: .15px;
+
   border: none;
   background-color: transparent;
   background-position: center;
+
   font-family: 'open sans', 'Arial', sans-serif;
   line-height: 36px;
 }
@@ -100,14 +113,18 @@ a:hover.detail-button {
 .detail-button {
   position: relative;
   z-index: 1;
+
   display: block;
+
   min-width: 220px;
   margin-bottom: 10px;
   padding: 5px;
+
   text-align: center;
   letter-spacing: 2.15px;
   text-transform: uppercase;
   word-wrap: break-word;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -120,10 +137,13 @@ a:hover.detail-button {
   right: 0;
   bottom: 0;
   left: 0;
+
   width: 100%;
   height: 8px;
   margin: auto;
+
   content: '';
+
   background: #f0c52e;
 }
 
@@ -131,6 +151,7 @@ a:hover.detail-button {
   height: 40px;
   padding-top: 5px;
   padding-bottom: 5px;
+
   background-repeat: repeat;
 }
 
@@ -154,6 +175,7 @@ a:hover.detail-button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   width: 1200px;
   min-height: 170px;
   margin: 0 auto;
@@ -163,6 +185,7 @@ a:hover.detail-button {
 
 .color-wrapper {
   width: 1160px;
+
   background-color: rgba(240, 197, 46, .5);
 }
 
@@ -175,6 +198,7 @@ a:hover.detail-button {
 
 .header-search-form {
   position: relative;
+
   min-width: 440px;
   margin-left: 40px;
 }
@@ -183,9 +207,11 @@ a:hover.detail-button {
   height: 42px;
   padding-top: 2px;
   padding-left: 36px;
+
   border: none;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   background-color: rgba(240, 197, 46, .0);
+
   font-family: 'open sans light', 'Arial', sans-serif;
   line-height: 30px;
 }
@@ -194,11 +220,13 @@ a:hover.detail-button {
   position: absolute;
   top: 8px;
   left: 3px;
+
   content: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path  fill="#272525" d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/></svg>');
 }
 
 .header-search-input:focus {
   width: 412px;
+
   border: none;
   border-bottom: 2px solid #000;
   outline: none;
@@ -223,9 +251,11 @@ a:hover.detail-button {
 .header-search-input:focus+.header-search-button {
   position: absolute;
   top: -5px;
+
   width: 83px;
   height: 47px;
   margin-left: 0;
+
   opacity: 1;
   color: #000;
   border: 2px solid #000;
@@ -259,6 +289,7 @@ a:hover.detail-button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   min-width: 475px;
   margin-top: 3px;
   margin-right: 40px;
@@ -279,7 +310,9 @@ a:hover.detail-button {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+
   margin-right: 20px;
+
   opacity: .3;
 }
 
@@ -288,17 +321,20 @@ a:hover.detail-button {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+
   height: 36px;
 }
 
 .button-login, .user-profile, .button-compare, .button-cart, .button-logout {
   position: relative;
+
   text-align: left;
 }
 
 .button-login::before, .user-profile::before {
   position: absolute;
   left: -25px;
+
   content: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>');
 }
 
@@ -309,24 +345,28 @@ a:hover.detail-button {
 .button-compare::before {
   position: absolute;
   left: -20px;
+
   content: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path fill="#272525" d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>');
 }
 
 .footer .button-compare::before {
   position: absolute;
   left: -18px;
+
   content: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path fill="#ffc600" d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>');
 }
 
 .button-cart::before {
   position: absolute;
   left: -20px;
+
   content: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 12 12"><path fill="#272525" d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path fill="#272525" d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>');
 }
 
 .footer .button-cart::before {
   position: absolute;
   left: -18px;
+
   content: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 12 12"><path fill="#ffc600" d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path fill="#ffc600" d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>');
 }
 
@@ -351,22 +391,27 @@ a:hover.detail-button {
   position: absolute;
   z-index: 1;
   left: -60px;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   min-width: 1160px;
   padding-left: 60px;
+
   background-color: rgb(247, 226, 150);
 }
 
 .catalog {
   position: relative;
+
   width: 250px;
   margin-left: 40px;
 }
 
 .catalog-wrapper {
   display: none;
+
   min-width: 1100px;
   min-height: 160px;
 }
@@ -374,16 +419,21 @@ a:hover.detail-button {
 .catalog-list {
   margin-right: 55px;
   padding: 0;
+
   letter-spacing: .15px;
+
   line-height: 36px;
 }
 
 .catalog-button {
   margin: 0;
   padding: 0;
+
   letter-spacing: 3.6px;
   text-transform: uppercase;
+
   color: rgb(0, 0, 0);
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -394,7 +444,9 @@ a:hover.detail-button {
   width: 16px;
   height: 16px;
   margin-left: 10px;
+
   content: url(../img/plus.svg);
+
   opacity: .3;
 }
 
@@ -407,6 +459,7 @@ a:hover.detail-button {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+
   width: 1200px;
 }
 
@@ -419,13 +472,17 @@ a:hover.detail-button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   margin: 0;
   margin-right: 20px;
   margin-left: auto;
   padding: 0;
+
   letter-spacing: 3.6px;
   text-transform: uppercase;
+
   color: #000;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -437,6 +494,7 @@ a:hover.detail-button {
 
 .navigation-item-link {
   display: block;
+
   height: auto;
 }
 
@@ -450,7 +508,9 @@ a:hover.detail-button {
 
 .slide {
   position: relative;
+
   display: none;
+
   width: 1040px;
   margin: 0 auto;
   margin-top: 20px;
@@ -469,10 +529,14 @@ a:hover.detail-button {
   z-index: -1;
   top: -20px;
   left: -60px;
+
   display: block;
+
   width: 1160px;
   height: 130px;
+
   content: '';
+
   background-color: rgba(240, 197, 46, .5);
 }
 
@@ -480,11 +544,13 @@ a:hover.detail-button {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+
   margin-right: 10px;
 }
 
 .slide-wrapper {
   position: relative;
+
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -493,7 +559,9 @@ a:hover.detail-button {
 .slide-tagline {
   margin-top: 75px;
   margin-bottom: 17px;
+
   letter-spacing: .17px;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 47px;
   font-weight: 400;
@@ -504,9 +572,12 @@ a:hover.detail-button {
   position: absolute;
   top: 35px;
   left: 0;
+
   width: 100px;
   height: 8px;
+
   content: '';
+
   background-color: #fff;
 }
 
@@ -515,7 +586,9 @@ a:hover.detail-button {
   z-index: -1;
   top: -35px;
   right: -12px;
+
   color: #fff;
+
   font-size: 179px;
 }
 
@@ -535,8 +608,11 @@ a:hover.detail-button {
 .slide-description {
   margin-top: 0;
   margin-bottom: 43px;
+
   letter-spacing: .15px;
+
   color: #464646;
+
   font-family: 'open sans', 'Arial', sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -545,6 +621,7 @@ a:hover.detail-button {
 
 .slide-link {
   display: inline-block;
+
   margin: 0;
 }
 
@@ -555,7 +632,9 @@ a:hover.detail-button {
 .slide-ttx-value {
   width: 160px;
   padding-bottom: 15px;
+
   letter-spacing: .36px;
+
   font-family: 'Gilroy-Light', 'Arial', sans-serif;
   font-size: 36px;
   font-weight: 300;
@@ -563,8 +642,11 @@ a:hover.detail-button {
 
 .slide-ttx-property {
   width: 155px;
+
   letter-spacing: .13px;
+
   color: #464646;
+
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
@@ -578,6 +660,7 @@ a:hover.detail-button {
   position: absolute;
   right: 24px;
   bottom: 128px;
+
   min-width: 80px;
 }
 
@@ -588,7 +671,9 @@ a:hover.detail-button {
 .slider-switch-label {
   position: relative;
   top: -20px;
+
   display: inline-block;
+
   width: 12px;
   height: 12px;
   margin-right: 18px;
@@ -602,13 +687,17 @@ a:hover.detail-button {
   position: absolute;
   top: 0;
   left: 0;
+
   display: inline-block;
+
   width: 12px;
   height: 12px;
   margin-bottom: 20px;
   margin-left: 2px;
+
   content: '';
   cursor: pointer;
+
   border: 1px solid #000000;
   border-radius: 50%;
   background-color: transparent;
@@ -628,6 +717,7 @@ a:hover.detail-button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   width: 1160px;
   margin-bottom: 170px;
 }
@@ -635,7 +725,9 @@ a:hover.detail-button {
 .product-categories-name {
   width: 160px;
   margin-top: 35px;
+
   color: #000;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -652,10 +744,13 @@ a:hover.detail-button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+
   width: 160px;
   height: 160px;
+
   text-align: center;
   vertical-align: middle;
+
   background-color: rgba(240, 197, 46, .5);
 }
 
@@ -686,6 +781,7 @@ a:hover.detail-button {
 
 .services {
   min-width: 1160px;
+
   background-color: rgb(229, 229, 229);
 }
 
@@ -693,6 +789,7 @@ a:hover.detail-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   width: 1160px;
   min-height: 288px;
   margin: 0 auto;
@@ -707,6 +804,7 @@ a:hover.detail-button {
   margin-bottom: 70px;
   margin-left: 0;
   padding: 0;
+
   border-right: 8px solid #000;
 }
 
@@ -728,7 +826,9 @@ a:hover.detail-button {
   width: 277px;
   padding-right: 118px;
   padding-left: 10px;
+
   letter-spacing: 3.8px;
+
   color: rgb(247, 225, 132);
   background-color: rgb(0, 0, 0);
   background-image: none;
@@ -736,11 +836,13 @@ a:hover.detail-button {
 
 .active-label.detail-button::before, .services-button:hover.detail-button::before {
   content: '';
+
   background-color: #000000;
 }
 
 .services-content {
   position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,6 +853,7 @@ a:hover.detail-button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+
   margin-top: -65px;
 }
 
@@ -778,8 +881,11 @@ a:hover.detail-button {
 
 .services-content-title {
   margin-bottom: 40px;
+
   letter-spacing: .21px;
+
   color: #000;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 47px;
   font-weight: 400;
@@ -787,8 +893,11 @@ a:hover.detail-button {
 
 .services-content-text {
   width: 460px;
+
   letter-spacing: .15px;
+
   color: #464646;
+
   font-family: 'open sans light', 'Arial', sans-serif;
 }
 
@@ -802,6 +911,7 @@ a:hover.detail-button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   width: 1160px;
   margin: 0;
   margin-bottom: 100px;
@@ -857,6 +967,7 @@ a:hover.detail-button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   margin-bottom: 6px;
 }
 
@@ -877,9 +988,13 @@ a:hover.detail-button {
 
 .about-title, .contacts-title {
   position: relative;
+
   margin-bottom: 50px;
+
   letter-spacing: .21px;
+
   color: #000;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 47px;
   font-weight: 400;
@@ -890,15 +1005,20 @@ a:hover.detail-button {
   position: absolute;
   top: -57px;
   left: 0;
+
   width: 80px;
   height: 8px;
+
   content: '';
+
   background-color: #000;
 }
 
 .about-content, .contacts-content {
   letter-spacing: -.35px;
+
   color: #464646;
+
   line-height: 30px;
 }
 
@@ -914,6 +1034,7 @@ a:hover.detail-button {
   margin: 0;
   margin-top: 65px;
   margin-bottom: 55px;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -926,7 +1047,9 @@ a:hover.detail-button {
 
 .contacts-link, .about-link {
   display: inline-block;
+
   min-width: 260px;
+
   letter-spacing: 3.8px;
 }
 
@@ -948,6 +1071,7 @@ a:hover.detail-button {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+
   width: 1200px;
   min-height: 325px;
 }
@@ -972,11 +1096,13 @@ a:hover.detail-button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   margin-top: 10px;
 }
 
 .footer-user-navigation, .footer-contacts-services, .footer-social {
   position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -986,6 +1112,7 @@ a:hover.detail-button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1007,6 +1134,7 @@ a:hover.detail-button {
 
 .footer-user-navigation-item, .footer-service-navigation-item {
   display: inline-block;
+
   text-align: center;
   vertical-align: middle;
 }
@@ -1030,6 +1158,7 @@ a:hover.detail-button {
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+
   width: 160px;
   margin-left: auto;
   padding: 0;
@@ -1039,9 +1168,12 @@ a:hover.detail-button {
   position: absolute;
   top: 30px;
   left: -30px;
+
   width: 80px;
   height: 8px;
+
   content: '';
+
   background-color: rgb(255, 198, 0);
 }
 
@@ -1065,6 +1197,7 @@ a:hover.detail-button {
 
 .footer .button {
   margin: 0;
+
   color: #fff;
 }
 
@@ -1095,7 +1228,9 @@ a:hover.detail-button {
 .navigation-link {
   letter-spacing: 3.6px;
   text-transform: uppercase;
+
   color: #fff;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -1113,6 +1248,7 @@ a:hover.detail-button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   width: 1200px;
   min-height: 170px;
   margin: 0 auto;
@@ -1122,6 +1258,7 @@ a:hover.detail-button {
 
 .headling-breadcrumbs {
   position: relative;
+
   width: 1160px;
   padding-right: 60px;
   padding-left: 60px;
@@ -1132,10 +1269,14 @@ a:hover.detail-button {
   z-index: -1;
   top: 0;
   left: 0;
+
   display: block;
+
   width: 1160px;
   height: 15px;
+
   content: '';
+
   background-color: rgba(240, 197, 46, .5);
 }
 
@@ -1143,7 +1284,9 @@ a:hover.detail-button {
   margin: 0;
   margin-top: 60px;
   margin-bottom: 30px;
+
   color: #000;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 47px;
 }
@@ -1156,15 +1299,20 @@ a:hover.detail-button {
 
 .breadcrumbs-item {
   position: relative;
+
   display: inline-block;
+
   margin-right: 35px;
+
   text-align: left;
   vertical-align: middle;
 }
 
 .breadcrumbs-link {
   letter-spacing: .14px;
+
   color: rgba(0, 0, 0, .3);
+
   font-size: 14px;
   font-weight: 300;
   line-height: 36px;
@@ -1173,6 +1321,7 @@ a:hover.detail-button {
 .breadcrumbs-item::before {
   position: absolute;
   right: -18px;
+
   content: url(../img/nav-arrow.png);
 }
 
@@ -1187,24 +1336,30 @@ a:hover.detail-button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   min-width: 1160px;
 }
 
 .filter {
   position: relative;
+
   width: 330px;
   margin-bottom: 3px;
   padding-left: 60px;
+
   background-color: #eeeeee;
 }
 
 .filter-title, .ranking-title {
   padding-top: 20px;
+
   text-align: left;
   letter-spacing: .91px;
   letter-spacing: 4px;
   text-transform: uppercase;
+
   color: #000;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1212,9 +1367,11 @@ a:hover.detail-button {
 
 .filter-title {
   position: relative;
+
   height: 70px;
   margin: 0;
   margin-bottom: 69px;
+
   background-color: #dcdcdc;
 }
 
@@ -1222,9 +1379,12 @@ a:hover.detail-button {
   position: absolute;
   top: 0;
   left: -1000%;
+
   width: 1000%;
   height: 100%;
+
   content: '';
+
   background-color: #dcdcdc;
 }
 
@@ -1239,15 +1399,18 @@ a:hover.detail-button {
 
 .ranking-title {
   position: relative;
+
   height: 70px;
   margin: 0;
   padding-left: 75px;
+
   background-color: #ebebeb;
 }
 
 fieldset {
   margin: 0;
   padding: 0;
+
   border: none;
 }
 
@@ -1256,7 +1419,9 @@ legend {
   margin: 0;
   padding: 0;
   padding-top: 7px;
+
   border-top: 2px solid black;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
 }
@@ -1268,13 +1433,17 @@ legend {
 .button-range {
   position: relative;
   z-index: 2;
+
   display: inline-block;
+
   margin-right: 55px;
   padding-top: 45px;
   padding-left: 0;
+
   color: rgba(0, 0, 0, 0.2);
   border: none;
   background-color: transparent;
+
   font-family: 'Gilroy', 'Arial Bold', sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -1285,14 +1454,18 @@ legend {
   position: absolute;
   z-index: 1;
   bottom: 26px;
+
   width: 20px;
   height: 20px;
+
   content: '	\01F784';
   cursor: pointer;
+
   border-radius: 50%;
   background-color: #ffffff;
   -webkit-box-shadow: 0 2px 0.5px;
   box-shadow: 0 2px 0.5px;
+
   font-size: 20px;
 }
 
@@ -1308,25 +1481,33 @@ legend {
   position: absolute;
   z-index: -1;
   top: 32px;
+
   height: 2px;
+
   content: '';
+
   outline: none;
 }
 
 .button-range-start::after {
   left: 10px;
+
   width: 190px;
+
   background-color: #dbdbdb;
 }
 
 .button-range-end::after {
   right: 28px;
+
   width: 110px;
+
   background-color: #91c92f;
 }
 
 .filter-label, .filter-colors-label, .filter-bt-label {
   letter-spacing: .14px;
+
   font-family: 'open sans', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -1335,6 +1516,7 @@ legend {
 
 .ranking-link {
   opacity: .3;
+
   font-family: 'open sans', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1356,9 +1538,12 @@ legend {
   position: absolute;
   top: -2px;
   left: -42px;
+
   width: 23px;
   height: 23px;
+
   content: '';
+
   border: 2px solid #000000;
   border-radius: 5px;
 }
@@ -1367,10 +1552,12 @@ legend {
   position: absolute;
   bottom: -7px;
   left: -38px;
+
   content: '\0000AC';
   -webkit-transform: rotate(-225deg);
   -ms-transform: rotate(-225deg);
   transform: rotate(-225deg);
+
   font-size: 40px;
 }
 
@@ -1389,9 +1576,12 @@ legend {
   position: absolute;
   top: -2px;
   left: -42px;
+
   width: 25px;
   height: 25px;
+
   content: '';
+
   border: 4px solid #000000;
   border-radius: 50%;
 }
@@ -1400,12 +1590,15 @@ legend {
   position: absolute;
   top: -11.5px;
   left: -34.9px;
+
   content: '\0026AB';
+
   font-size: 19px;
 }
 
 .filter-button, .product-to-cart {
   min-width: 200px;
+
   background-position: center;
 }
 
@@ -1414,6 +1607,7 @@ legend {
 
 .ranking-wrapper {
   position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1423,7 +1617,9 @@ legend {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   margin-bottom: 70px;
+
   background-color: #ebebeb;
 }
 
@@ -1432,9 +1628,12 @@ legend {
   z-index: -1;
   top: 0;
   left: 0;
+
   width: 1000%;
   height: 70px;
+
   content: '';
+
   background-color: #ebebeb;
 }
 
@@ -1442,6 +1641,7 @@ legend {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+
   margin: 0;
   margin-left: 45px;
   padding: 0;
@@ -1453,7 +1653,9 @@ legend {
 
 .ranking-item {
   display: inline-block;
+
   margin-right: 25px;
+
   text-align: center;
   vertical-align: top;
 }
@@ -1465,6 +1667,7 @@ legend {
 
 .ranking-list-type:last-child .ranking-link {
   margin: 0;
+
   font-size: 20px;
 }
 
@@ -1487,6 +1690,7 @@ legend {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   width: 760px;
   margin-left: 75px;
 }
@@ -1507,12 +1711,15 @@ legend {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   margin-top: 23px;
 }
 
 .product-name {
   width: 260px;
+
   letter-spacing: .18px;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -1521,7 +1728,9 @@ legend {
 
 .product-cost {
   letter-spacing: .16px;
+
   color: rgb(70, 70, 70);
+
   font-family: 'Gilroy-Light', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -1535,18 +1744,23 @@ legend {
   position: absolute;
   top: 0;
   left: 0;
+
   visibility: hidden;
+
   width: 360px;
   height: 380px;
   margin: 0;
   padding: 0;
   padding-top: 165px;
+
   text-align: center;
+
   background-color: rgba(238, 238, 238, .7);
 }
 
 .product-photo-container:hover .product-to-container {
   visibility: visible;
+
   cursor: pointer;
 }
 
@@ -1554,22 +1768,28 @@ legend {
   position: absolute;
   top: 25px;
   right: 25px;
+
   width: 60px;
   height: 60px;
   padding-top: 14px;
+
   content: 'new';
   text-align: center;
   text-transform: uppercase;
+
   opacity: .2;
   border: 2px solid #000000;
   border-radius: 50%;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 14px;
 }
 
 .product-to-range {
   letter-spacing: .13px;
+
   opacity: .5;
+
   font-size: 13px;
   font-weight: 300;
   line-height: 36px;
@@ -1595,13 +1815,17 @@ legend {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   width: 760px;
   min-height: 70px;
   margin-top: -12px;
   margin-left: 75px;
+
   letter-spacing: .91px;
   text-transform: uppercase;
+
   background-color: #ebebeb;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -1627,9 +1851,11 @@ legend {
 
 .paginator-page {
   display: inline-block;
+
   margin: 0;
   margin-right: 25px;
   padding: 0;
+
   text-align: left;
   vertical-align: middle;
 }
@@ -1647,14 +1873,27 @@ legend {
 
 .popup-write-us, .popup-map {
   position: fixed;
-  top: 120px;
-  left: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
   display: none;
+
+  width: 960px;
+  height: 553px;
+  margin: auto;
+
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
 .popup-show {
   z-index: 1;
+
   display: block;
+
   -webkit-animation: bounce .5s;
   animation: bounce .5s;
 }
@@ -1662,16 +1901,6 @@ legend {
 .popup-error {
   -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
-}
-
-.popup-write-us, .popup-map {
-  position: fixed;
-  width: 960px;
-  height: 553px;
-  margin-left: -480px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
-  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 }
 
 .popup-write-us {
@@ -1697,6 +1926,7 @@ legend {
 .popup-map-iframe {
   position: relative;
   z-index: 2;
+
   border: none;
 }
 
@@ -1757,6 +1987,7 @@ legend {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   margin-top: 90px;
 }
 
@@ -1773,6 +2004,7 @@ legend {
 
 .write-us-text-input {
   display: block;
+
   width: 760px;
   height: 156px;
   margin-bottom: 50px;
@@ -1783,14 +2015,18 @@ legend {
   z-index: 10;
   top: 22px;
   right: 22px;
+
   width: 55px;
   height: 55px;
+
   cursor: pointer;
+
   opacity: .5;
   border: 0;
   border-radius: 50%;
   outline: none;
   background-color: #f0c52e;
+
   font-size: 0;
 }
 
@@ -1806,9 +2042,12 @@ legend {
   position: absolute;
   top: 26px;
   right: 12px;
+
   width: 31px;
   height: 2px;
+
   content: '';
+
   background-color: #ffffff;
 }
 
@@ -1826,6 +2065,7 @@ legend {
 
 .write-us-name, .write-us-email, .write-us-text {
   color: #000;
+
   font-family: 'Gilroy-ExtraBold', 'Arial Bold', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -1834,6 +2074,7 @@ legend {
 
 .write-us-input, .write-us-text-input {
   padding-left: 20px;
+
   opacity: .5;
   color: rgb(70, 70, 70);
   border: none;
