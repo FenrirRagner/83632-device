@@ -39,19 +39,17 @@ window.addEventListener("keydown", function(evt) {
 linkWriteUs.addEventListener("click", function(evt) {
   evt.preventDefault();
   popupWriteUs.classList.add("popup-show");
-
-  if (storageLogin) {
+  popupWriteUsLogin.focus();
+  if (storageLogin && storageEmail) {
     popupWriteUsLogin.value = storageLogin;
-    popupWriteUsEmail.focus();
-  } else {
-    popupWriteUsLogin.focus();
-  }
-
-  if (storageEmail) {
     popupWriteUsEmail.value = storageEmail;
     popupWriteUsText.focus();
-  } else {
+  } else if (storageLogin && !storageEmail) {
+    popupWriteUsLogin.value = storageLogin;
     popupWriteUsEmail.focus();
+  } else if (!storageLogin && storageEmail) {
+    popupWriteUsEmail.value = storageEmail;
+    popupWriteUsLogin.focus();
   }
 });
 
