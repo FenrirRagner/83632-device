@@ -164,6 +164,11 @@ ul {
   width: 1200px;
 }
 
+.container-second {
+  width: 1160px;
+  padding: 0;
+}
+
 .color-wrapper {
   width: 1160px;
   background-color: rgba(240, 197, 46, .5);
