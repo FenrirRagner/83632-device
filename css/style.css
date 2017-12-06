@@ -42,6 +42,7 @@ html {
 }
 
 body {
+  min-width: 1200px;
   font-weight: 300;
   font-size: 15px;
   font-family: 'open sans', Arial, sans-serif;
@@ -572,7 +573,7 @@ ul {
 
 .slider-switch {
   position: absolute;
-  right: 524px;
+  right: 24px;
   bottom: 128px;
   min-width: 80px;
 }
