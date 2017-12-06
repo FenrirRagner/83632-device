@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Магазин гаджетов "Девайс"</title>
 </head>
 
@@ -75,76 +75,79 @@
 
   <main class="main">
     <div class="container">
-      <article class="slide slide-selfie slide-active">
-        <div class="slide-container">
-          <img class="slide-image" src="img/slider-1.png" width="440" height="485" alt="Палка для селфи">
-        </div>
-        <div class="slide-wrapper">
-          <p class="slide-tagline">Делай селфи,<br> как Бен Стиллер!</p>
-          <h2 class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь&#160;&#160;Восемь, Карл!) метров длиной и весом всего 5 килограмм.</h2>
-          <a class="slide-link detail-button" href="#">Подробнее</a>
-          <table class="slide-ttx-table" title="Характеристики устройства">
-            <tr class="slide-ttx-product">
-              <td class="slide-ttx-value">8,5 м</td>
-              <td class="slide-ttx-value">5 кг</td>
-              <td class="slide-ttx-value">Карбон</td>
-            </tr>
-            <tr class="slide-ttx-product">
-              <td class="slide-ttx-property">Длина палки</td>
-              <td class="slide-ttx-property">Вес палки</td>
-              <td class="slide-ttx-property">Материал</td>
-            </tr>
-          </table>
-          <div class="slider-switch">
+      <div class="sliders-container">
+        <div class="slider-switch-container">
             <input class="slider-switch-item" type="radio" id="slide-1-switch" checked name="slide-switch" title="Переключатель слайдов">
             <label class="slider-switch-label" for="slide-1-switch"></label>
             <input class="slider-switch-item" type="radio" id="slide-2-switch" name="slide-switch" title="Переключатель слайдов">
             <label class="slider-switch-label" for="slide-2-switch"></label>
             <input class="slider-switch-item" type="radio" id="slide-3-switch" name="slide-switch" title="Переключатель слайдов">
             <label class="slider-switch-label" for="slide-3-switch"></label>
+        </div>
+        <article class="slide slide-selfie slide-active">
+          <div class="slide-container">
+            <img class="slide-image" src="img/slider-1.png" width="440" height="485" alt="Палка для селфи">
           </div>
-        </div>
-      </article>
+          <div class="slide-wrapper">
+            <p class="slide-tagline">Делай селфи,<br> как Бен Стиллер!</p>
+            <h2 class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь&#160;(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</h2>
+            <a class="slide-link detail-button" href="#">Подробнее</a>
+            <table class="slide-ttx-table" title="Характеристики устройства">
+              <tr class="slide-ttx-product">
+                <td class="slide-ttx-value">8,5 м</td>
+                <td class="slide-ttx-value">5 кг</td>
+                <td class="slide-ttx-value">Карбон</td>
+              </tr>
+              <tr class="slide-ttx-product">
+                <td class="slide-ttx-property">Длина палки</td>
+                <td class="slide-ttx-property">Вес палки</td>
+                <td class="slide-ttx-property">Материал</td>
+              </tr>
+            </table>
+          </div>
+        </article>
 
-      <article class="slide slide-watch">
-        <div class="slide-container">
-          <img class="slide-image" src="img/slider-2.png" width="440" height="485" alt="Фитнес-браслет">
-        </div>
-        <div class="slide-wrapper">
-          <p class="slide-tagline">Худеем<br> правильно!</p>
-          <h2 class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</h2>
-          <a class="slide-link detail-button" href="#">Подробнее</a>
-          <table class="slide-ttx-table" title="Характеристики устройства">
-            <tr class="slide-ttx-product">
-              <td class="slide-ttx-value">48 часов</td>
-            </tr>
-            <tr class="slide-ttx-product">
-              <td class="slide-ttx-property">Без подзарядки</td>
-            </tr>
-          </table>
-        </div>
-      </article>
+        <article class="slide slide-watch">
+          <div class="slide-container">
+            <img class="slide-image" src="img/slider-2.png" width="440" height="485" alt="Фитнес-браслет">
+          </div>
+          <div class="slide-wrapper">
+            <p class="slide-tagline">Худеем<br> правильно!</p>
+            <h2 class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</h2>
+            <a class="slide-link detail-button" href="#">Подробнее</a>
+            <table class="slide-ttx-table" title="Характеристики устройства">
+              <tr class="slide-ttx-product">
+                <td class="slide-ttx-value">48 часов</td>
+              </tr>
+              <tr class="slide-ttx-product">
+                <td class="slide-ttx-property">Без подзарядки</td>
+              </tr>
+            </table>
+          </div>
+        </article>
 
-      <article class="slide slide-copter">
-        <div class="slide-container">
-          <img class="slide-image" src="img/slider-3.png" width="526" height="485" alt="Квадрокоптер">
-        </div>
-        <div class="slide-wrapper">
-          <p class="slide-tagline">Порхает&#160;как&#160;бабочка, жалит как пчела!</p>
-          <h2 class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</h2>
-          <a class="slide-link detail-button" href="#">Подробнее</a>
-          <table class="slide-ttx-table" title="Характеристики устройства">
-            <tr class="slide-ttx-product">
-              <td class="slide-ttx-value">800 м</td>
-              <td class="slide-ttx-value">50 м</td>
-            </tr>
-            <tr class="slide-ttx-product">
-              <td class="slide-ttx-property">Дальность полета</td>
-              <td class="slide-ttx-property">Радиус поражения</td>
-            </tr>
-          </table>
-        </div>
-      </article>
+        <article class="slide slide-copter">
+          <div class="slide-container">
+            <img class="slide-image" src="img/slider-3.png" width="526" height="485" alt="Квадрокоптер">
+          </div>
+          <div class="slide-wrapper">
+            <p class="slide-tagline">Порхает&#160;как&#160;бабочка, жалит как пчела!</p>
+            <h2 class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</h2>
+            <a class="slide-link detail-button" href="#">Подробнее</a>
+            <table class="slide-ttx-table" title="Характеристики устройства">
+              <tr class="slide-ttx-product">
+                <td class="slide-ttx-value">800 м</td>
+                <td class="slide-ttx-value">50 м</td>
+              </tr>
+              <tr class="slide-ttx-product">
+                <td class="slide-ttx-property">Дальность полета</td>
+                <td class="slide-ttx-property">Радиус поражения</td>
+              </tr>
+            </table>
+          </div>
+        </article>
+      </div>
+
 
       <section class="product-categories">
         <h2 class="product-categories-title visually-hidden">Категории товаров</h2>
