@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="css/style.min.css">
   <title>Магазин гаджетов "Девайс" каталог</title>
 </head>
@@ -93,62 +92,66 @@
           </ul>
         </nav>
       </div>
-
+    </div>
+    <div class="catalog-inner-container">
       <div class="catalog-inner-wrapper">
         <section class="filter">
           <h2 class="visually-hidden">Фильтр товаров по характеристикам</h2>
           <p class="filter-title">Фильтр:</p>
-          <form class="filter-form" action="https://echo.htmlacademy.ru">
-            <fieldset class="filter-range">
-              <legend class="filter-cost">
-                Стоимость
-              </legend>
-              <button class="button-range button-range-start">от 0</button>
-              <button class="button-range button-range-end">до 5000</button>
-            </fieldset>
+          <div class="filter-wrapper">
+            <form class="filter-form" action="https://echo.htmlacademy.ru">
+              <fieldset class="filter-range">
+                <legend class="filter-cost">
+                  Стоимость
+                </legend>
+                <button class="button-range button-range-start">от 0</button>
+                <button class="button-range button-range-end">до 5000</button>
+              </fieldset>
 
-            <fieldset class="filter-colors">
-              <legend class="filter-feature">Цвет</legend>
-              <ul class="filter-colors-list">
-                <li class="filter-colors-item">
-                  <input class="filter-colors-input visually-hidden" type="checkbox" id="black" name="color-black" checked>
-                  <label class="filter-colors-label" for="black">Черный</label>
-                </li>
-                <li class="filter-colors-item">
-                  <input class="filter-colors-input visually-hidden" type="checkbox" id="white" name="color-white">
-                  <label class="filter-colors-label" for="white">Белый</label>
-                </li>
-                <li class="filter-colors-item">
-                  <input class="filter-colors-input visually-hidden" type="checkbox" id="blue" name="color-blue" checked>
-                  <label class="filter-colors-label" for="blue">Синий</label>
-                </li>
-                <li class="filter-colors-item">
-                  <input class="filter-colors-input visually-hidden" type="checkbox" id="red" name="color-red" checked>
-                  <label class="filter-colors-label" for="red">Красный</label>
-                </li>
-                <li class="filter-colors-item">
-                  <input class="filter-colors-input visually-hidden" type="checkbox" id="pink" name="color-pink">
-                  <label class="filter-colors-label" for="pink">Розовый</label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="filter-colors">
+                <legend class="filter-feature">Цвет</legend>
+                <ul class="filter-colors-list">
+                  <li class="filter-colors-item">
+                    <input class="filter-colors-input visually-hidden" type="checkbox" id="black" name="color-black" checked>
+                    <label class="filter-colors-label" for="black">Черный</label>
+                  </li>
+                  <li class="filter-colors-item">
+                    <input class="filter-colors-input visually-hidden" type="checkbox" id="white" name="color-white">
+                    <label class="filter-colors-label" for="white">Белый</label>
+                  </li>
+                  <li class="filter-colors-item">
+                    <input class="filter-colors-input visually-hidden" type="checkbox" id="blue" name="color-blue" checked>
+                    <label class="filter-colors-label" for="blue">Синий</label>
+                  </li>
+                  <li class="filter-colors-item">
+                    <input class="filter-colors-input visually-hidden" type="checkbox" id="red" name="color-red" checked>
+                    <label class="filter-colors-label" for="red">Красный</label>
+                  </li>
+                  <li class="filter-colors-item">
+                    <input class="filter-colors-input visually-hidden" type="checkbox" id="pink" name="color-pink">
+                    <label class="filter-colors-label" for="pink">Розовый</label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="filter-bluetooth">
-              <legend class="filter-feature">Bluetooth</legend>
-              <ul class="filter-bt-list">
-                <li class="filter-bt-item">
-                  <input class="filter-bt-input visually-hidden" type="radio" id="bt-yes" name="bt" value="yes" checked>
-                  <label class="filter-bt-label" for="bt-yes">Есть</label>
-                </li>
-                <li class="filter-bt-item">
-                  <input class="filter-bt-input visually-hidden" type="radio" id="bt-no" name="bt" value="no">
-                  <label class="filter-bt-label" for="bt-no">Нет</label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="filter-button button detail-button" type="submit">Показать</button>
-          </form>
+              <fieldset class="filter-bluetooth">
+                <legend class="filter-feature">Bluetooth</legend>
+                <ul class="filter-bt-list">
+                  <li class="filter-bt-item">
+                    <input class="filter-bt-input visually-hidden" type="radio" id="bt-yes" name="bt" value="yes" checked>
+                    <label class="filter-bt-label" for="bt-yes">Есть</label>
+                  </li>
+                  <li class="filter-bt-item">
+                    <input class="filter-bt-input visually-hidden" type="radio" id="bt-no" name="bt" value="no">
+                    <label class="filter-bt-label" for="bt-no">Нет</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="filter-button button detail-button" type="submit">Показать</button>
+            </form>
+          </div>
         </section>
+
         <section class="ranking">
           <h2 class="visually-hidden">Сортировка товаров по условиям</h2>
           <div class="ranking-wrapper">
@@ -266,6 +269,7 @@
         </section>
       </div>
     </div>
+
   </main>
   <footer class="footer">
     <div class="container">
