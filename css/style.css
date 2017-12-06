@@ -712,8 +712,8 @@ ul {
 
 .active-label, .services-button:hover {
   padding-top: 2px;
-  padding-bottom: 2px;
   padding-right: 118px;
+  padding-bottom: 2px;
   padding-left: 10px;
   width: 277px;
   background-color: #000;
@@ -915,6 +915,7 @@ ul {
 }
 
 .footer {
+  min-width: 1200px;
   background-color: #464646;
 }
 
@@ -929,8 +930,8 @@ ul {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  min-width: 1200px;
   min-height: 325px;
-  width: 1200px;
 }
 
 .logo-img-yellow {
@@ -1167,21 +1168,33 @@ ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-width: 1160px;
   margin: 0 auto;
+  min-width: 1160px;
   /*background-image: linear-gradient(to right, rgb(239, 239, 239)33.5%, rgb(255, 255, 255)33.5%);*/
 }
 
 .filter {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-bottom: 3px;
   min-width: 345px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: flex-end;
-  align-items: flex-end;
   background-color: #eee;
 }
 
@@ -1202,18 +1215,20 @@ ul {
 .filter-title {
   position: relative;
   margin: 0 0 69px;
+  padding-right: 170px;
+  width: 100%;
   height: 70px;
   background-color: #dcdcdc;
-  width: 100%;
   text-align: right;
-  padding-right: 170px;
 }
 
 .ranking {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin-bottom: 77px;
   width: 850px;
   background-color: white;
-  flex-grow: 1;
 }
 
 .ranking-title {
@@ -1407,8 +1422,8 @@ legend {
 }
 
 .ranking-list-type {
-  padding: 0;
   margin-left: 190px;
+  padding: 0;
 }
 
 .ranking-item {
