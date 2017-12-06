@@ -476,9 +476,7 @@ ul {
 
 .slide-wrapper {
   position: relative;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  width: 500px;
 }
 
 .slide-tagline {
@@ -528,6 +526,9 @@ ul {
   font-size: 15px;
   font-family: 'open sans', Arial, sans-serif;
   line-height: 30px;
+  width: 500px;
+  display: inline-block;
+  word-wrap: break-word;
 }
 
 .slide-link {
