@@ -538,6 +538,8 @@ ul {
 
 .slide-ttx-table {
   margin-top: 55px;
+  table-layout: fixed;
+  width: 100%
 }
 
 .slide-ttx-value {
@@ -547,6 +549,7 @@ ul {
   font-weight: 300;
   font-size: 36px;
   font-family: Gilroy-Light, Arial, sans-serif;
+  word-wrap: break-word;
 }
 
 .product-categories-name, .services-content-title {
@@ -560,6 +563,7 @@ ul {
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
+  word-wrap: break-word;
 }
 
 .slide-ttx-property:nth-child(2), .slide-ttx-value:nth-child(2) {
@@ -1180,20 +1184,20 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: end;
-      align-content: flex-end;
+  align-content: flex-end;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-bottom: 3px;
   min-width: 345px;
   background-color: #eee;
@@ -1225,8 +1229,8 @@ ul {
 
 .ranking {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   margin-bottom: 77px;
   width: 850px;
   background-color: white;
