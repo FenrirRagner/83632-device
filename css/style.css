@@ -1391,24 +1391,25 @@ legend {
 
 .filter-colors-label::before {
   position: absolute;
-  top: -2px;
-  left: -42px;
-  width: 23px;
-  height: 23px;
-  border: 2px solid #000;
+  top: -10px;
+  left: -49px;
+  border: 5px solid #000;
   border-radius: 5px;
+  width: 40px;
+  height: 40px;
   content: '';
+  -webkit-transform: scale(.56);
+      -ms-transform: scale(.56);
+          transform: scale(.56);
 }
 
-.filter-colors-input:checked+.filter-colors-label::after {
-  position: absolute;
-  bottom: -7px;
-  left: -38px;
-  content: '\0000AC';
-  font-size: 40px;
-  -webkit-transform: rotate(-225deg);
+.filter-colors-input:checked+.filter-colors-label::before {
+  content: '\002714';
+  font-size: 45px;
+
+  /*-webkit-transform: rotate(-225deg);
   -ms-transform: rotate(-225deg);
-  transform: rotate(-225deg);
+  transform: rotate(-225deg);*/
 }
 
 .filter-bluetooth {
