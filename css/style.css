@@ -1431,12 +1431,13 @@ legend {
   content: '';
 }
 
-.filter-bt-input:checked+.filter-bt-label::after {
-  position: absolute;
-  top: -11.5px;
-  left: -34.9px;
+.filter-bt-input:checked+.filter-bt-label::before {
   content: '\0026AB';
   font-size: 19px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 14px;
 }
 
 .filter-button, .product-to-cart {
