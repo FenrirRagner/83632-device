@@ -302,6 +302,7 @@ ul {
 .button-cart, .button-compare, .button-login, .button-logout, .user-profile {
   position: relative;
   text-align: left;
+  font-weight: 400;
 }
 
 .button-login::before, .user-profile::before {
@@ -550,11 +551,15 @@ ul {
   font-size: 15px;
   font-family: 'open sans', Arial, sans-serif;
   line-height: 30px;
+  text-align: left;
+  vertical-align: middle;
 }
 
 .slide-link {
   display: inline-block;
   margin: 0;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .slide-ttx-table {
@@ -601,6 +606,8 @@ ul {
   margin-right: 18px;
   width: 12px;
   height: 12px;
+  text-align: left;
+  vertical-align: middle;
 }
 
 .slider-switch-label:last-child {
@@ -621,6 +628,8 @@ ul {
   background-color: transparent;
   content: '';
   cursor: pointer;
+  text-align: left;
+  vertical-align: middle;
 }
 
 .slider-switch-item:checked+.slider-switch-label::before {
@@ -724,22 +733,23 @@ ul {
 }
 
 .services-item {
-  margin: 0 0 20px;
+  margin: 0;
   width: 160px;
 }
 
 .services-button {
   min-width: 160px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 24px;
 }
 
 .services-item:first-child {
-  margin-top: 78px;
+  margin-top: 80px;
 }
 
 .active-label, .services-button:hover {
-  padding-top: 2px;
   padding-right: 118px;
-  padding-bottom: 2px;
   padding-left: 10px;
   width: 277px;
   background-color: #000;
@@ -940,6 +950,8 @@ ul {
   display: inline-block;
   min-width: 260px;
   letter-spacing: 3.8px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .footer {
@@ -964,6 +976,8 @@ ul {
 
 .logo-img-yellow {
   display: inline-block;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .footer-user-navigation-list {
@@ -1298,6 +1312,8 @@ legend {
   font-size: 14px;
   font-family: Gilroy, 'Arial Bold', sans-serif;
   line-height: 22.27px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .button-range-end::before, .button-range-start::before {
