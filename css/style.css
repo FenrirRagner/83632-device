@@ -116,7 +116,7 @@ ul {
   letter-spacing: 2.15px;
   font-weight: 400;
   font-size: 18px;
-  font-family: Gilroy-ExtraBold, 'Arial Bold', sans-serif;
+  font-family: Gilroy-ExtraBold, 'Arial Black', sans-serif;
 }
 
 .detail-button:before {
@@ -195,7 +195,7 @@ ul {
 
 .catalog-button, .navigation-list, .slide-tagline {
   font-weight: 400;
-  font-family: Gilroy-ExtraBold, 'Arial Bold', sans-serif;
+  font-family: Gilroy-ExtraBold, 'Arial Black', sans-serif;
 }
 
 .header-search-form::before {
@@ -577,7 +577,7 @@ ul {
 }
 
 .product-categories-name, .services-content-title {
-  font-family: Gilroy-ExtraBold, 'Arial Bold', sans-serif;
+  font-family: Gilroy-ExtraBold, 'Arial Black', sans-serif;
 }
 
 .slide-ttx-property {
@@ -819,7 +819,7 @@ ul {
 }
 
 .about-items, .about-title, .contacts-title, .filter-title, .main-catalog-title, .navigation-link, .ranking-title, legend {
-  font-family: Gilroy-ExtraBold, 'Arial Bold', sans-serif;
+  font-family: Gilroy-ExtraBold, 'Arial Black', sans-serif;
 }
 
 .brands-items {
@@ -1310,7 +1310,7 @@ legend {
   color: rgba(0, 0, 0, .2);
   font-weight: 300;
   font-size: 14px;
-  font-family: Gilroy, 'Arial Bold', sans-serif;
+  font-family: Gilroy, 'Arial Black', sans-serif;
   line-height: 22.27px;
   text-align: center;
   vertical-align: middle;
@@ -1337,7 +1337,7 @@ legend {
 }
 
 .paginator, .product-name, .product-new::after, .write-us-email, .write-us-name, .write-us-text {
-  font-family: Gilroy-ExtraBold, 'Arial Bold', sans-serif;
+  font-family: Gilroy-ExtraBold, 'Arial Black', sans-serif;
 }
 
 .button-range-start::before {
