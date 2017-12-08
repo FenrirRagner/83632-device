@@ -71,10 +71,24 @@ a:hover.detail-button {
   opacity: 1;
 }
 
-ul {
-  list-style: none
+/*Base style for ul, ALL ul*/
+.catalog-list,
+.navigation-list,
+.services-list,
+.brands-items,
+.about-items,
+.footer-user-navigation-list,
+.footer-service-navigation-list,
+.social-items,
+.breadcrumbs-list,
+.filter-colors-list,
+.filter-bt-list,
+.ranking-list,
+.ranking-list-type,
+.product-to-container,
+.paginator-pages {
+   list-style: none
 }
-
 
 /*Styles for frequent class*/
 
@@ -527,6 +541,11 @@ ul {
   font-size: 179px;
 }
 
+.slide-tagline::after {
+  font-family: Gilroy-ExtraBold, 'Arial Black', sans-serif;
+  letter-spacing: 10px;
+}
+
 .slide-selfie .slide-tagline::after {
   content: '01';
 }
@@ -578,6 +597,7 @@ ul {
 
 .product-categories-name, .services-content-title {
   font-family: Gilroy-ExtraBold, 'Arial Black', sans-serif;
+  letter-spacing: 0.18px;
 }
 
 .slide-ttx-property {
@@ -1165,6 +1185,7 @@ ul {
   margin: 60px 0 30px;
   color: #000;
   font-size: 47px;
+  letter-spacing: 0.17px;
 }
 
 .breadcrumbs-list {
