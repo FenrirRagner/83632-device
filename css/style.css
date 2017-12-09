@@ -759,6 +759,7 @@ a:hover.detail-button {
   padding-top: 2px;
   padding-bottom: 2px;
   margin-bottom: 24px;
+  letter-spacing: 3.18px;
 }
 
 .services-item:first-child {
@@ -771,7 +772,6 @@ a:hover.detail-button {
   width: 277px;
   background-color: #000;
   color: #f7e184;
-  letter-spacing: 3.8px;
 }
 
 .active-label.detail-button::before, .services-button:hover.detail-button::before {
@@ -826,6 +826,7 @@ a:hover.detail-button {
   letter-spacing: .21px;
   font-weight: 400;
   font-size: 47px;
+  letter-spacing: 1.21px;
 }
 
 .services-content-text {
@@ -884,21 +885,25 @@ a:hover.detail-button {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 6px;
+  width: 1160px;
 }
 
 .about, .contacts {
   margin-bottom: 65px;
   min-height: 562px;
+    flex-shrink: 0;
 }
 
 .about {
   margin: 0;
   margin-right: 128px;
   padding: 0;
+  width: 472px;
 }
 
 .contacts {
-  margin-right: 0;
+  margin-right: -;
+  width: 560px;
 }
 
 .about-title, .contacts-title {
@@ -923,7 +928,6 @@ a:hover.detail-button {
 
 .about-content, .contacts-content {
   color: #464646;
-  letter-spacing: -.35px;
   line-height: 30px
 }
 
@@ -942,6 +946,7 @@ a:hover.detail-button {
   font-weight: 400;
   font-size: 16px;
   line-height: 40px;
+  padding-left: 35px;
 }
 
 .about-item {
@@ -951,7 +956,7 @@ a:hover.detail-button {
 .about-item::before {
   position: absolute;
   bottom: 16px;
-  left: -40px;
+  left: -35px;
   width: 8px;
   height: 8px;
   border: 2px solid #e5e5e5;
