@@ -511,6 +511,7 @@ a:hover.detail-button {
   -ms-flex: 1;
   flex: 1;
   margin-right: 40px;
+  margin-left: 2px;
 }
 
 .slide-wrapper {
@@ -524,6 +525,7 @@ a:hover.detail-button {
   letter-spacing: .17px;
   font-size: 47px;
   line-height: normal;
+  letter-spacing: 0.17px;
 }
 
 .slide-tagline::before {
@@ -546,7 +548,7 @@ a:hover.detail-button {
 
 .slide-tagline::after {
   font-family: Gilroy-ExtraBold, 'Arial Black', sans-serif;
-  letter-spacing: 10px;
+  letter-spacing: 0.36px;
 }
 
 .slide-selfie .slide-tagline::after {
@@ -696,11 +698,8 @@ a:hover.detail-button {
   text-align: center;
 }
 
-.product-categories-card-link:nth-child(3) .card-image-wrapper {
-  -webkit-box-align: end;
-  align-items: flex-end;
-  -ms-flex-align: end;
-  vertical-align: bottom;
+.card-image-wrapper .product-categories-card-image[src="img/popular-2.svg"] {
+  align-self: flex-end;
 }
 
 .product-categories-card-link:active .product-categories-card-image {
@@ -1064,28 +1063,22 @@ a:hover.detail-button {
   -ms-flex-positive: 1;
   flex-grow: 1;
   align-items: flex-start;
+  justify-content: flex-end;
   margin-left: 30px;
   height: 72px;
 }
 
 .social-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
   align-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  margin-left: auto;
+  justify-content: center;
   padding: 0;
-  width: 160px;
-}
-
-.catalog-inner-wrapper, .container-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  min-width: 160px;
+  flex-grow: 1;
+  margin-left: 100px;
+  margin-right: 100px
 }
 
 .social-items::before {
@@ -1101,6 +1094,13 @@ a:hover.detail-button {
   margin: 0;
   padding: 0;
   height: 32px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+
+.social-item:nth-child(2n) {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .social-link {
@@ -1142,7 +1142,7 @@ a:hover.detail-button {
 }
 
 .social-link-htmlAcademy {
-  margin-left: auto;
+  margin-top: 15px;
 }
 
 .navigation-link {
