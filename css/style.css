@@ -219,7 +219,7 @@ a:hover.detail-button {
   background-color: rgba(240, 197, 46, 0);
   font-family: 'open sans light', Arial, sans-serif;
   line-height: 30px;
-  width: 412px;
+  width: 320px;
 }
 
 .catalog-button, .navigation-list, .slide-tagline {
@@ -257,8 +257,6 @@ a:hover.detail-button {
   background-color: transparent;
   cursor: default;
   outline: none;
-  width: 0;
-  height: 0;
 }
 
 .header-search-input:focus + .header-search-button {
@@ -275,6 +273,7 @@ a:hover.detail-button {
   background-color: #000;
   color: #fff;
   opacity: 1;
+  cursor: pointer;
 }
 
 .header-search-input:focus + .header-search-button:active {
@@ -699,7 +698,8 @@ a:hover.detail-button {
 }
 
 .card-image-wrapper .product-categories-card-image[src="img/popular-2.svg"] {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .product-categories-card-link:active .product-categories-card-image {
@@ -895,7 +895,8 @@ a:hover.detail-button {
 .about, .contacts {
   margin-bottom: 65px;
   min-height: 562px;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 
 .about {
@@ -1071,21 +1072,32 @@ a:hover.detail-button {
   flex-basis: auto;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  align-items: flex-start;
-  justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-left: 30px;
   height: 72px;
 }
 
 .social-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
   min-width: 160px;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin-left: 100px;
   margin-right: 100px
 }
@@ -1103,7 +1115,8 @@ a:hover.detail-button {
   margin: 0;
   padding: 0;
   height: 32px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin-bottom: 20px;
 }
 
