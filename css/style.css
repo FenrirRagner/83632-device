@@ -63,8 +63,7 @@ a:hover {
   opacity: .6
 }
 
-a:focus,
-a:active {
+a:focus, a:active {
   opacity: .3
 }
 
@@ -807,8 +806,7 @@ a:hover.detail-button {
   background-color: #f0c52e;
 }
 
-.active-label,
-.services-button:active::before {
+.active-label, .services-button:active::before {
   padding-right: 118px;
   padding-left: 10px;
   width: 277px;
@@ -1420,8 +1418,7 @@ legend {
   line-height: 22.27px;
 }
 
-.button-range-end::before,
-.button-range-start::before {
+.button-range-end::before, .button-range-start::before {
   position: absolute;
   bottom: 26px;
   z-index: 1;
@@ -1436,13 +1433,11 @@ legend {
   cursor: pointer;
 }
 
-.button-range-end:focus,
-.button-range-start:focus {
+.button-range-end:focus, .button-range-start:focus {
   outline: none;
 }
 
-.button-range-end:active::before,
-.button-range-start:active::before {
+.button-range-end:active::before, .button-range-start:active::before {
   width: 22px;
   height: 22px;
 }
@@ -1522,7 +1517,7 @@ legend {
   line-height: 20px;
 }
 
-.filter-colors-input:hover+.filter-colors-label::before{
+.filter-colors-input:hover+.filter-colors-label::before {
   opacity: .6;
 }
 
@@ -1559,8 +1554,7 @@ legend {
   background-position: center;
 }
 
-.filter-button:hover,
-.product-to-cart:hover {
+.filter-button:hover, .product-to-cart:hover {
   opacity: 1;
 }
 
