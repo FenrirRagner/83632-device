@@ -63,7 +63,8 @@ a:hover {
   opacity: .6
 }
 
-a:focus {
+a:focus,
+a:active {
   opacity: .3
 }
 
@@ -132,7 +133,7 @@ a:hover.detail-button {
   margin: auto;
   width: 100%;
   height: 8px;
-  background: #f0c52e;
+  background-color: #f0c52e;
   content: '';
 }
 
@@ -500,7 +501,7 @@ a:hover.detail-button {
 
 .sliders-container {
   position: relative;
-  margin: 20px auto 95px;
+  margin: 20px auto 98px;
   width: 1040px;
 }
 
@@ -528,7 +529,7 @@ a:hover.detail-button {
   z-index: -1;
   display: block;
   width: 1160px;
-  height: 130px;
+  height: 129px;
   background-color: rgba(240, 197, 46, .5);
 }
 
@@ -538,6 +539,7 @@ a:hover.detail-button {
   flex: 1;
   margin-right: 40px;
   margin-left: 2px;
+  margin-top: -2px;
 }
 
 .slide-wrapper {
@@ -548,8 +550,7 @@ a:hover.detail-button {
 .slide-tagline {
   margin-top: 75px;
   margin-bottom: 17px;
-  letter-spacing: .17px;
-  letter-spacing: 0.17px;
+  letter-spacing: .65px;
   font-size: 47px;
   line-height: normal;
 }
@@ -559,14 +560,14 @@ a:hover.detail-button {
   top: 35px;
   left: 0;
   width: 100px;
-  height: 8px;
+  height: 7px;
   background-color: #fff;
 }
 
 .slide-tagline::after {
   position: absolute;
-  top: -35px;
-  right: -12px;
+  top: -36.5px;
+  right: -11.5px;
   z-index: -1;
   color: #fff;
   font-size: 179px;
@@ -592,7 +593,7 @@ a:hover.detail-button {
 .slide-description {
   display: inline-block;
   margin-top: 0;
-  margin-bottom: 43px;
+  margin-bottom: 44.5px;
   width: 500px;
   color: #464646;
   vertical-align: middle;
@@ -624,6 +625,7 @@ a:hover.detail-button {
   font-weight: 300;
   font-size: 36px;
   font-family: Gilroy-Light, Arial, sans-serif;
+  line-height: 36px;
 }
 
 .product-categories-name, .services-content-title {
@@ -638,7 +640,7 @@ a:hover.detail-button {
   letter-spacing: .13px;
   font-weight: 300;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 13px;
 }
 
 .slide-ttx-property:nth-child(2), .slide-ttx-value:nth-child(2) {
@@ -696,7 +698,7 @@ a:hover.detail-button {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-bottom: 170px;
+  margin-bottom: 169.5px;
   width: 1160px;
 }
 
@@ -753,7 +755,7 @@ a:hover.detail-button {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto 90px;
-  min-height: 288px;
+  min-height: 280px;
   width: 1160px;
 }
 
@@ -765,13 +767,8 @@ a:hover.detail-button {
   flex-grow: 1;
 }
 
-.brands-items, .services-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-}
-
 .services-list {
-  margin: -100px 115px 70px 0;
+  margin: -100px 116px 70px 0;
   padding: 0;
   min-height: 319px;
   width: 285px;
@@ -791,11 +788,28 @@ a:hover.detail-button {
   letter-spacing: 3.18px;
 }
 
+.services-button:before {
+  background-color: #f0c52e;
+}
+
 .services-item:first-child {
   margin-top: 80px;
 }
 
-.active-label, .services-button:hover {
+.services-button:hover {
+  opacity: 1;
+}
+
+.services-button:hover::before {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 40px;
+  background-repeat: repeat;
+  background-color: #f0c52e;
+}
+
+.active-label,
+.services-button:active::before {
   padding-right: 118px;
   padding-left: 10px;
   width: 277px;
@@ -804,7 +818,11 @@ a:hover.detail-button {
   opacity: 1;
 }
 
-.active-label.detail-button::before, .services-button:hover.detail-button::before {
+.services-button:active {
+  color: #f7e184;
+}
+
+.active-label.detail-button::before {
   background-color: #000;
   content: '';
 }
@@ -891,7 +909,7 @@ a:hover.detail-button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 0 100px;
+  margin: 0 0 102px;
   padding: 0;
   width: 1160px;
 }
@@ -936,7 +954,7 @@ a:hover.detail-button {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-bottom: 65px;
-  min-height: 562px;
+  min-height: 562.5px;
 }
 
 .about {
@@ -963,7 +981,7 @@ a:hover.detail-button {
 
 .about-title::before, .contacts-title::before {
   position: absolute;
-  top: -57px;
+  top: -61px;
   left: 0;
   width: 80px;
   height: 8px;
@@ -1267,11 +1285,19 @@ a:hover.detail-button {
 }
 
 .breadcrumbs-link {
-  color: rgba(0, 0, 0, .3);
+  opacity: .3;
   letter-spacing: .14px;
   font-weight: 300;
   font-size: 14px;
   line-height: 36px;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 1;
+}
+
+.breadcrumbs-link:active {
+  opacity: .1;
 }
 
 .breadcrumbs-item::before {
@@ -1395,7 +1421,8 @@ legend {
   line-height: 22.27px;
 }
 
-.button-range-end::before, .button-range-start::before {
+.button-range-end::before,
+.button-range-start::before {
   position: absolute;
   bottom: 26px;
   z-index: 1;
@@ -1408,6 +1435,17 @@ legend {
   content: '	\01F784';
   font-size: 20px;
   cursor: pointer;
+}
+
+.button-range-end:focus,
+.button-range-start:focus {
+  outline: none;
+}
+
+.button-range-end:active::before,
+.button-range-start:active::before {
+  width: 22px;
+  height: 22px;
 }
 
 .filter-bt-label, .filter-colors-label, .filter-label, .ranking-link {
@@ -1470,24 +1508,23 @@ legend {
 
 .filter-colors-label::before {
   position: absolute;
-  top: -10px;
-  left: -49px;
-  width: 40px;
-  height: 40px;
-  border: 5px solid #000;
+  top: -2px;
+  left: -42px;
+  width: 23px;
+  height: 23px;
+  border: 2px solid #000;
   border-radius: 5px;
   content: '';
-  -webkit-transform: scale(.56);
-  -ms-transform: scale(.56);
-  transform: scale(.56);
 }
 
 .filter-colors-input:checked+.filter-colors-label::before {
   content: '\002714';
-  font-size: 45px;
-  /*-webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  transform: rotate(-225deg);*/
+  font-size: 27px;
+  line-height: 20px;
+}
+
+.filter-colors-input:hover+.filter-colors-label::before{
+  opacity: .6;
 }
 
 .filter-bluetooth {
