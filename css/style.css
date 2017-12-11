@@ -1559,6 +1559,11 @@ legend {
   background-position: center;
 }
 
+.filter-button:hover,
+.product-to-cart:hover {
+  opacity: 1;
+}
+
 .ranking-wrapper {
   background-color: #eee;
 }
