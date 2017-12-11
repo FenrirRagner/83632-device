@@ -11,9 +11,6 @@ var popupWriteUsLogin = popupWriteUs.querySelector("[name=user-name]");
 var popupWriteUsEmail = popupWriteUs.querySelector("[name=user-email]");
 var popupWriteUsText = popupWriteUs.querySelector("[name=text-message]");
 
-// var storageLogin = localStorage.getItem("name");
-// var storageEmail = localStorage.getItem("email");
-
 /interective modal map/
 linkMap.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -40,15 +37,15 @@ linkWriteUs.addEventListener("click", function(evt) {
   evt.preventDefault();
   popupWriteUs.classList.add("popup-show");
   popupWriteUsLogin.focus();
-  if (storageLogin && storageEmail) {
-    popupWriteUsLogin.value = storageLogin;
-    popupWriteUsEmail.value = storageEmail;
+  if (localStorage.getItem("name") && localStorage.getItem("email")) {
+    popupWriteUsLogin.value = localStorage.getItem("name");
+    popupWriteUsEmail.value = localStorage.getItem("email");
     popupWriteUsText.focus();
-  } else if (storageLogin && !storageEmail) {
-    popupWriteUsLogin.value = storageLogin;
+  } else if (localStorage.getItem("name") && !localStorage.getItem("email")) {
+    popupWriteUsLogin.value = localStorage.getItem("name");
     popupWriteUsEmail.focus();
-  } else if (!storageLogin && storageEmail) {
-    popupWriteUsEmail.value = storageEmail;
+  } else if (!localStorage.getItem("name") && localStorage.getItem("email")) {
+    popupWriteUsEmail.value = localStorage.getItem("email");
     popupWriteUsLogin.focus();
   }
 });
